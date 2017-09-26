@@ -6,10 +6,26 @@ Author:  Brad Hussey
 Website: bradhussey.ca
 */
 
+
 html,
 body {
     height: 100%;
-}
+    font-family: 'Open Sans', sans-serif;
+    background-color: green;
+  }
+
+  @media (max-width: 575px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    body {
+      background-color: pink;
+    }
+  }
+
 
 img {
     max-width: 100%;
