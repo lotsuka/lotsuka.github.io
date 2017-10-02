@@ -19,10 +19,28 @@ body {
       background-color: blue;
     }
   }
-
+/*sm*/
   @media (min-width: 576px) and (max-width: 767px) {
     body {
       background-color: pink;
+    }
+  }
+/*md*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      background-color: black;
+    }
+  }
+/*lg*/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body {
+      background-color: orange;
+    }
+  }
+/*xl*/
+  @media (min-width: 1200px) {
+    body {
+      background-color: orange;
     }
   }
 
