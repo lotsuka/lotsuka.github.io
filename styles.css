@@ -10,37 +10,48 @@ Website: bradhussey.ca
 html,
 body {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    background-color: green;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    font-weight: 400;
+  }
+
+  .h1 {
+    font-weight: 600;
+
+  }
+
+  .lead {
+    text-align: center;
+    width: 70%;
   }
 
   @media (max-width: 575px) {
     body {
-      background-color: blue;
+      background-color: white;
     }
   }
 /*sm*/
   @media (min-width: 576px) and (max-width: 767px) {
     body {
-      background-color: pink;
+      background-color: white;
     }
   }
 /*md*/
   @media (min-width: 768px) and (max-width: 991px) {
     body {
-      background-color: black;
+      background-color: white;
     }
   }
 /*lg*/
   @media (min-width: 992px) and (max-width: 1199px) {
     body {
-      background-color: orange;
+      background-color: white;
     }
   }
 /*xl*/
   @media (min-width: 1200px) {
     body {
-      background-color: orange;
+      background-color: white;
     }
   }
 
@@ -80,6 +91,11 @@ img {
     padding: 1.875rem;
 }
 
+.project-title {
+  text-align: center;
+
+
+}
 #footer-main {
     background: #222;
     color: white;
