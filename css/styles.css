@@ -1,0 +1,123 @@
+    /*
+    STYLES.CSS
+
+    Course:  Bootstrap 4 Quick Start
+    Author:  Brad Hussey
+    Website: bradhussey.ca
+    */
+
+
+    html,
+    body {
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+        font-weight: 400;
+      }
+
+      .h1 {
+        font-weight: 600;
+
+      }
+
+      h2 {
+        font-weight: 300;
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+
+     .hero {
+        background: black;
+        color: white;
+        padding: 96px;
+      }
+
+      .lead {
+        text-align: center;
+        width: 70%;
+          margin: auto;
+
+      }
+
+    ul { display: flex}
+
+    li { list-style-type: none;}
+      @media (max-width: 575px) {
+        body {
+          background-color: white;
+        }
+      }
+    /*sm*/
+      @media (min-width: 576px) and (max-width: 767px) {
+        body {
+          background-color: white;
+        }
+      }
+    /*md*/
+      @media (min-width: 768px) and (max-width: 991px) {
+        body {
+          background-color: white;
+        }
+      }
+    /*lg*/
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body {
+          background-color: white;
+        }
+      }
+    /*xl*/
+      @media (min-width: 1200px) {
+        body {
+          background-color: white;
+        }
+      }
+
+
+    img {
+        max-width: 100%;
+    }
+
+    /* cover */
+
+    #cover {
+        background: #222 url('img/stars.jpg') center center no-repeat;
+        background-size: cover;
+        color: white;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    #cover-caption {
+        width: 100%;
+    }
+
+    .section-content {
+        padding: 5rem 0;
+    }
+
+    #about {
+        background: url('img/girlincar.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    .about-text {
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 1.875rem;
+    }
+
+    .project-title {
+      text-align: center;
+
+
+    }
+    #footer-main {
+        background: #222;
+        color: white;
+        font-size: 0.8rem;
+        padding: 2.5rem 0;
+    }
