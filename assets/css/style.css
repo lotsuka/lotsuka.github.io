@@ -9,6 +9,8 @@ body {
   background-color: white;
   color: #555555;
   font-weight: 400;
+  margin: auto;
+  max-width: 90%;
 }
 
 h1 {
@@ -38,17 +40,30 @@ a {
 
 
 
-  #hero {
-    padding: 16px;
-    min-height: 160px;
-  }
+#hero {
+  padding: 16px;
+  min-height: 160px;
+}
 
-  .lead {
-    text-align: center;
-    width: 70%;
-      margin: auto;
+.lead {
+  text-align: center;
+  width: 70%;
+    margin: auto;
 
-  }
+}
+
+.contact{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.project {
+  
+}
+
+}
+.project img {
+}
 
 ul { display: block; }
 
