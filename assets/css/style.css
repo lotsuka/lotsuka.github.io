@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 24px;
   text-align: center;
   line-height: 140%;
   color: #222;
@@ -55,7 +55,8 @@ a {
 .contact{
   display: flex;
   justify-content: space-evenly;
-
+  margin: 20px 10px;
+  color: darkslategray;
 }
 .project {
   
