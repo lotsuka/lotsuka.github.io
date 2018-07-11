@@ -5,17 +5,18 @@ STYLE.CSS
 html,
 body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
   color: #555555;
   font-weight: 400;
   margin: auto;
   max-width: 90%;
+  line-height: 120%;
 }
 
 h1 {
   font-weight: 100;
-  font-size: 36px;
+  font-size: 24px;
   margin: 16px 0 0 16px;
   text-align: center;
   text-transform: uppercase;
@@ -35,7 +36,7 @@ h3, p {
 }
 
 a {
-  color: #222;
+  color: #2678e5;
   text-decoration: none;
 }
 
@@ -49,7 +50,7 @@ a {
 .lead {
   text-align: center;
   width: 70%;
-    margin: auto;
+  margin: auto;
 
 }
 
