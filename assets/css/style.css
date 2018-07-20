@@ -35,8 +35,12 @@ h3, p {
   margin-right: 16px;
 }
 
-a {
+#hero a {
   color: #2678e5;
+}
+
+a {
+  color:#555;
   text-decoration: none;
 }
 
@@ -61,7 +65,8 @@ a {
   color: darkslategray;
 }
 .project {
-  
+  margin-bottom: 48px;
+
 }
 
 }
