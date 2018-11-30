@@ -12,6 +12,7 @@ body {
   margin: auto;
   max-width: 90%;
   line-height: 120%;
+  font-size: var(--base-font-size);
 }
 
 h1 {
@@ -40,6 +41,7 @@ h2 {
   }
 }
 
+
 h3, p {
   margin-left: 16px;
   margin-right: 16px;
@@ -54,10 +56,8 @@ a {
   text-decoration: none;
 }
 
-
-
 #hero {
-  padding: 16px;
+  padding: 4em 16em;
   min-height: 160px;
 }
 
