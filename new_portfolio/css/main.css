@@ -1,6 +1,6 @@
 @import "./reset.css";
+@import "./variables.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-
 .container {
     width: 100%;
     position: relative;
@@ -10,17 +10,41 @@
     display: flex;
     justify-content: space-between;
     font-size: 1em;
+    line-height: 150%;
+}
+
+h1 {
+    background: url("../img/lotsuka_logo.png") no-repeat center center;
+    width: 196px;
+    height: 30px;
+    text-indent: -9999px;
 }
 
 .panel {
     height: 100vh;
     width: 36vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: column;
-    padding: 8% 8%;
+    padding: 48px 8%;
     position: sticky;
     top: 0;
+}
+
+button {
+    background: #24323E;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.display {
+    font-size: var(--text-large);
+    line-height: 120%;
+}
+
+.caption {
+    font-size: 14px;
+    color: var(--gray-medium);
 }
 
 .projects {
@@ -28,14 +52,18 @@
 }
 
 .project {
-    padding: 8% 16%;
+    padding: 48px 16%;
 }
+
 .project h3 {
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: 700;
 }
+
 .project img {
     height: 480px;
 }
+
 .project .tags li {
     display: inline;
     border: 1px solid #000;
@@ -53,4 +81,3 @@
 .centauro {
     background-color: #DFFFB5;
 }
-
