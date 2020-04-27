@@ -1,8 +1,11 @@
 :root {
     --main-bg-color: #ffffff;
     --base-font-size: 16px;
+    
     --base-spacing: 8px;
+
     --gray-medium: #535D67;
+
     --text-large: 32px;
     --text-xlarge: 48px;
   }
