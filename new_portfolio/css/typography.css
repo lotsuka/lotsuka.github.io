@@ -1,0 +1,20 @@
+.subheading {
+    line-height: 32px;
+    color: var(--gray-medium);
+}
+
+a {
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.display {
+    font-size: var(--text-large);
+    line-height: 120%;
+}
+
+.caption {
+    font-size: 14px;
+    color: var(--gray-medium);
+}

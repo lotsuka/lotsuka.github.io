@@ -1,0 +1,29 @@
+.projects {
+    width: 64vw;
+}
+
+.project {
+    padding: 48px 16%;
+}
+
+.project h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -1%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project img {
+    height: 480px;
+}
+
+.project .tags li {
+    display: inline;
+    border: 1px solid #000;
+    padding: 4px;
+}
+
+.highlights {
+    line-height: 32px;
+    margin: 48px 0 0 0;
+}
