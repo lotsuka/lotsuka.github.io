@@ -1,5 +1,17 @@
+.panel {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 48px 8%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.16);
+}
+
 .projects {
-    width: 64vw;
+    width: 60vw;
 }
 
 .project {
@@ -14,7 +26,7 @@
 }
 
 .project img {
-    height: 480px;
+    height: 624px;
 }
 
 .project .tags li {
@@ -25,5 +37,5 @@
 
 .highlights {
     line-height: 32px;
-    margin: 48px 0 0 0;
+    margin: 64% 0 0 0;
 }
