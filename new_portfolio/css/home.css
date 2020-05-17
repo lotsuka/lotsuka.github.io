@@ -31,8 +31,11 @@
 
 .project .tags li {
     display: inline;
-    border: 1px solid #000;
+    border: none;
+    background: var(--gray-lighter);
     padding: 4px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
 .highlights {

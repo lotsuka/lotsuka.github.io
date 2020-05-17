@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuintoAndar iOS app</title>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Lucas Otsuka</header>
+
+        <article>
+            <h1>QuintoAndar iOS app</h1>
+
+            <div class="summary">
+                <h3>Overview</h3>
+                <p>QuintoAndar is the biggest **real estate startup** in Brazil. It‘s a marketplace where users can
+                    search,
+                    rent, and advertise properties.</p>
+
+                <h3>My role</h3>
+                <p>When I joined the company, I was the only product designer in a squad of 8 people focused on the
+                    company’s iOS apps.</p>
+
+                <h3>Goals</h3>
+                <ul>
+                    <li>Increase the number of property **visits**</li>
+                    <li>Increase the number of property listing **views**</li>
+                    <li>Help users **save time** while finding their dream home</li>
+                </ul>
+
+                <h3>Outcomes</h3>
+                <ul>
+                    <li>Increased visit bookings by 24% percent</li>
+                    <li>Featured as App of the day on App Store</li>
+                    <li>App accessible through VoiceOver</li>
+                </ul>
+            </div>
+
+
+            <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ba6be9d0-22d5-4871-a736-b75c5070f940/Frame_4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ba6be9d0-22d5-4871-a736-b75c5070f940/Frame_4.png"
+                alt="">
+
+
+
+            <h2>Behind the scenes</h2>
+
+            <p>QuintoAndar has grown its properties base exponentially in 2018. When I joined the company, my challenge
+                was
+                to **increase user engagement** on the iOS native app. We decided to focus on the following challenge,
+                so we
+                could increase visit bookings and discoverability:</p>
+
+            <p class="highlight">How might we help tenants save time while finding their dream home on the platform?</p>
+
+
+
+            <h3>1. Exploratory User research</h3>
+
+            <p>Because of the tight deadline for shipping the first version, we’ve started with a guerrilla test. I’ve
+                invited one of the developers to help me interview 5 users that have previously rented a house without
+                using
+                QuintoAndar. We asked them to try to find their next home on our iOS app. Some questions that got asked:
+            </p>
+
+            <ul>
+                <li>Have you ever lived in a rented house? Tell me about the experience.</li>
+                <li>Have you heard about QuintoAndar before? If so, how would you describe it for a friend?</li>
+                <li>How would you choose a property to visit on the app?</li>
+            </ul>
+
+            <img
+                src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd2b16b1-c181-4ae8-9eca-319d53996061/old_ios_app.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd2b16b1-c181-4ae8-9eca-319d53996061/old_ios_app.mp4">
+
+            <h4>Key insights</h4>
+
+            <img
+                src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a39082d-91cb-4efa-927b-d92fe62604f7/old_ios_app.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a39082d-91cb-4efa-927b-d92fe62604f7/old_ios_app.png">
+
+            <p>We've tested this version of the app that was available on App Store by that time</p>
+
+            > "What's this number? 2 places or is it on the 2nd floor?"
+
+            <ul>
+                <li>Some users didn't understand the meaning of the numbers on the map
+            </ul>
+
+            > “How can I go back from here?”
+
+            <ul>
+                <li>Some couldn’t find how to close the carrousel</li>
+                <li>Others took a great amount of time to realize there was a horizontal scroll on the carrousel</li>
+            </ul>
+
+            > “Maybe I would give more information about ... any bus or underground lines around.”
+
+            <li>Some wanted to see more information about public transport for each property
+
+                > “Are there any history or something similar?”
+
+                <ul>
+                    <li>They could not retrieve properties that they’ve seen before in the map, so they could compare
+                        them
+                        with new ones</li>
+                    <li>None of the users used or mentioned the favorites feature</li>
+                    <li>People couldn’t easily find which filters were applied on the map</li>
+                    <li>People didn't know if the filter was applied to the map</li>
+                    <li>When people applied too many filters they wouldn't get a message saying there were no results to
+                        those filters</li>
+                </ul>
+
+                <h2>2. First round: map navigation</h2>
+
+                <p>After prioritizing the usability problems we found on user research, we’ve run a competitive analysis
+                    with apps related to real estate, accommodation, and maps. We came out with some concepts to give
+                    more
+                    information to the users while searching through properties on the map.</p>
+
+                <!--Picture of sketches from iPad -->
+
+                <h4>**Gathering feedback from around the company**</h4>
+
+                <p>I've presented 3 different visual options alongside a Figma prototype to simulate the panning on the
+                    map
+                    during a **design critique** with 7 other design peers. After everyone exposed their thoughts about
+                    the
+                    visual alternatives, we've come up with a final concept to test:</p>
+
+                <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a40fc0-1e78-443c-9876-2a42f0c788f7/Screen_Shot_2020-04-29_at_11.59.28_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a40fc0-1e78-443c-9876-2a42f0c788f7/Screen_Shot_2020-04-29_at_11.59.28_PM.png"
+                    alt="">
+
+                <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/625ffb47-ad0d-4fcf-bf6d-58b586fde86e/Screen_Shot_2020-04-30_at_12.00.59_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/625ffb47-ad0d-4fcf-bf6d-58b586fde86e/Screen_Shot_2020-04-30_at_12.00.59_AM.png"
+                    alt="">
+
+                <h4>Defining a concept to test</h4>
+
+                <img
+                    src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00b9c112-5537-471e-9334-e9a4a7106bb7/Antes_e_Depois_Clusters.png">
+                <img
+                    src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00b9c112-5537-471e-9334-e9a4a7106bb7/Antes_e_Depois_Clusters.png">
+
+                <ul>
+                    <li>Pins on the map would display properties prices so people would save time exploring the ones in
+                        their price range</li>
+                    <li>When more than one property was on the building, we would display the number of units on the
+                        pin,
+                        followed by a building icon.</li>
+
+                    <li>As users scroll, the map would move to the property location, including other properties nearby,
+                        so
+                        we would increase discoverability and the chance of the user finding the perfect match for a
+                        house
+                        and book a visit.</li>
+                    <li>Some users didn’t find out that there were more properties to scroll through the carousel.
+                        That’s
+                        why we’ve Improved its affordance so people would guess there would be more properties to scroll
+                        through</li>
+                    <li>Because some people didn’t understand the numbers on the circles at first, we’ve added the label
+                        properties to the clusters, people would immediately understand it means that there are
+                        properties
+                        in the clusters.</li>
+
+                    <li>We've added the name of close public stations nearby and a link to show the property on a map,
+                        so
+                        users would better understand the surroundings of the properties.</li>
+                </ul>
+
+                <img
+                    src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/158b3a22-751a-4b5a-b1db-47f14c1effa7/Tenants_iOS_-_After_-_Clusters_-_Edited_-_reduced.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/158b3a22-751a-4b5a-b1db-47f14c1effa7/Tenants_iOS_-_After_-_Clusters_-_Edited_-_reduced.mp4">
+
+                <ul>
+                    <li>When users favorite a property, the pin on the map would display an icon</li>
+                    <li>When users visit a property listing the pin would become faded</li>
+                </ul>
+
+                <p>Developers decided to code a quick prototype to simulate the interaction on the map as the users
+                    would
+                    zoom in and navigate through the carousel. After that, we took the prototype to a round of user
+                    usability tests.</p>
+
+                <h4>**Usability Tests**</h4>
+
+                <p>We’ve recruited 5 more people who have previously rented a house to test our prototype. This is what
+                    we've learned:</p>
+
+                <ul>
+                    <li>People praised the price displayed directly on the map but complained about the time it took to
+                        get
+                        to the zoom level that would show the prices. Hence, we’ve decided to display price pins for
+                        some
+                        properties when they were not close to others.</li>
+                    <li>People couldn’t successfully understand the pins of building with more than one property, so
+                        we’ve
+                        decided to use circles with numbers instead.</li>
+                </ul>
+
+                <p>The map navigation tests also gave us good insights into how people use filters and their
+                    expectations.
+                    Thus, we’ve decided to work on the filters controls and improving the feedback about which filters
+                    were
+                    applied for the next iteration of the design.</p>
+
+                <h2> Round two: **Filters**</h2>
+
+                <!-- Photo of filters page and filters on the map -->
+
+                <p>This is what we've learned on the usability tests and the action we've overtaken afterward:</p>
+
+                <ul>
+                    <li>A lot of users tried to use several filters at once and got no results. But there was not enough
+                        feedback that the filters we're applied, so the users kept waiting for the properties to load on
+                        the
+                        map. Hence, we've added a feedback message immediately after filters were applied to the map,
+                        including a modal saying no results were found and inviting the user to try other parameters.
+                    </li>
+
+                    <li>Some users would go back to the map view and forget that filters were already applied, so we
+                        made
+                        clear which filters were applied to the map view and make easy for the user to remove any of
+                        those
+                    </li>
+
+                    <li>We've enhanced the distinction between rent prices and the full price and allow users to type
+                        the
+                        price range (not only for accessibility matter but also because users struggled to correctly set
+                        the
+                        price they wanted)</li>
+
+                </ul>
+
+                <h2> Third **round: viewed history and favorites**</h2>
+
+                <p>With all of the previous improvements we've already reached a good number of visits booking, but
+                    we’ve
+                    decided to stretch our goal. We concluded that if we focus on improving the Favorites and the Alerts
+                    features we could boost visits bookings. Alerts is a feature where users subscribe to regular emails
+                    that show them properties that they might like, according to their filters.</p>
+
+                <p>From analytics data and user interviews we've learned that even though more than half of the users
+                    used
+                    those features, there was a good opportunity to increase their adoption.</p>
+
+                <p>So we’ve created some A/B tests to learn if some little tweaks would indeed increase visits. We’ve
+                    learned that:</p>
+
+                <ul>
+                    <li>If we showed a suggestion to create an alert in the carrousel, we would increase visit bookings.
+                    </li>
+                    <li>If we made the Favorite button clearer and more visible on the properties page, people would
+                        increase the
+                        usage of the feature and consequently book more visits.</li>
+                    <li>If we suggested users to create an alert right after they first apply a filter we would increase
+                        alerts
+                        creation and consequently, visit bookings.</li>
+
+                </ul>
+
+                <h3> **Viewed properties**</h3>
+
+                <p>Even though we've showed on the map which properties the users has already viewed, user tests
+                    indicated
+                    that people still missed a easier way to easily retrieve those properties. This, we built a
+                    dedicated
+                    list of viewed properties history. However, we were not sure where to place that feature for
+                    customer to
+                    adoption.</p>
+
+                <h4>**Card sorting**</h4>
+
+                <img
+                    src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f408e69-1379-4940-8f1c-dad50d6841fc/Screen_Shot_2020-04-30_at_12.18.18_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f408e69-1379-4940-8f1c-dad50d6841fc/Screen_Shot_2020-04-30_at_12.18.18_AM.png">
+
+                <p>We've gathered some user's contacts and sent an email to them inviting for an interview in person.
+                    We've
+                    recruited 6 people for a card sorting and usability test session in house, not only to find out
+                    where to
+                    place this new feature but to grasp how users would organize other features on the app. We've
+                    learned
+                    that:</p>
+
+                <ul>
+                    <li>1. People tended to see this History feature more related to the Favorites section than to their
+                        profile section</li>
+                    <li>2. We needed to change the Favorite section label on the bottom bar to Viewed, otherwise not
+                        many
+                        users engage with this new feature. The favorite section would be alongside it.</li>
+                </ul>
+
+                <h2> Last round: making **the app accessible**</h2>
+
+                <img
+                    src=" https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0dbc0e3e-0bb3-4dcb-96c1-ab34ae60ad93/Antes_Depois_-_Visita_-_Narrado.mp4">
+
+                <img
+                    src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0dbc0e3e-0bb3-4dcb-96c1-ab34ae60ad93/Antes_Depois_-_Visita_-_Narrado.mp4">
+
+                <p>In 2019, QuintoAndar started an internal movement to make its apps more accessible. Event tough
+                    accessibility should be considered from the beginning, we've found out that our app was not
+                    accessible for people blind using VoiceOver. We've run user tests with blind people and we even
+                    hired a blind QA tester to help us conform to accessibility guidelines. </p>
+
+                <h4>**Key improvements**</h4>
+
+                <ul>
+                    <li>We've added proper description to abbreviations, for example, FRI was now properly described as
+                        Friday on
+                        VoiceOver.</li>
+                    <li>We've described the Number of selectable elements in a row, for example, days of the week</li>
+                    <li>We've described if the day was available for booking visits</li>
+                    <li>We've properly described buttons on the app</li>
+                </ul>
+
+                <h2> Learnings</h2>
+
+                <p>The business outcomes we've achieved with those design improvements made me</p>
+
+                <p>I would have relied less on guerrilla tests and recruit better participants from the beginning.</p>
+
+                <p>Increase in visits</p>
+
+                <p>People talking positively about QuintoAndar VoiceOver</p>
+
+                <p>What we’ve learned from it was that users couldn’t retrieve easily the houses they’ve seen before.
+                    And
+                    that impacted the speed of comparison among houses.</p>
+        </article>
+    </div>
+</body>
+
+</html>

@@ -24,6 +24,18 @@ h1 {
     text-indent: -9999px;
 }
 
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+article {
+    width: 960px;
+    margin: 0 auto;
+}
 
 button {
     background: #24323E;
