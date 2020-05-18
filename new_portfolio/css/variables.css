@@ -6,10 +6,17 @@
 
     --gray-medium: #535D67;
     --gray-lighter: #7C97AC;
+    --gray-dark: #192A3E;
     
 
     --color-primary: #0056B1;
 
     --text-large: 32px;
     --text-xlarge: 48px;
+
+    --color-project-1: #D6DBFF;
+    --color-project-2: #0056B1;
+    --color-project-2: #DFFFB5;
+
+    --page-width: 960px;
   }

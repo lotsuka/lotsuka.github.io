@@ -1,6 +1,5 @@
 @import "./reset.css";
 @import "./variables.css";
-@import "./home.css";
 @import "./typography.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap');
 
@@ -9,14 +8,12 @@
     position: relative;
     background: #ffffff;
     font-family: 'DM Sans', sans-serif;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
+    color: var(--gray-dark);
     font-size: 1em;
     line-height: 150%;
 }
 
-h1 {
+.logo {
     background: url("../img/lotsuka_logo.png") no-repeat center center;
     background-size: 207px;
     width: 207px;
@@ -24,17 +21,41 @@ h1 {
     text-indent: -9999px;
 }
 
+header {
+    background-color: var(--gray-dark);
+}
+.menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+    font-family: 'Poppins', sans-serif;
+
+}
 h2 {
     font-size: 2em;
+    margin: 0 0 1rem 0;
 }
 
 h3 {
     font-size: 1.5em;
+    margin: 0 0 1rem 0;
 }
 
 article {
+    margin: 4rem auto;
+}
+
+.menu {
     width: 960px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 button {

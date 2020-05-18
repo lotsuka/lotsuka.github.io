@@ -1,0 +1,32 @@
+.logo {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.article-body p {
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+.cover img {
+    width: var(--page-width);
+}
+
+.summary {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+.summary .topic {
+    max-width: 220px;
+}
+
+.cover {
+    background-color: var(--color-project-1);
+}
+
+.page-width {
+    width: var(--page-width);
+    margin: auto;
+}
+    
