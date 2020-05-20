@@ -2,7 +2,6 @@
 @import "./variables.css";
 @import "./typography.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap');
-
 .container {
     width: 100%;
     position: relative;
@@ -24,6 +23,7 @@
 header {
     background-color: var(--gray-dark);
 }
+
 .menu {
     height: 80px;
     display: flex;
@@ -37,8 +37,8 @@ h1 {
     letter-spacing: -1px;
     margin: 0 0 1rem 0;
     font-family: 'Poppins', sans-serif;
-
 }
+
 h2 {
     font-size: 2em;
     margin: 0 0 1rem 0;
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 article {
@@ -81,17 +81,19 @@ button {
 
 .hero_image {
     display: flex;
+    justify-content: center;
 }
 
-/* Different projects themes */ 
+/* Different projects themes */
+
 .ios {
-    background-color: #CBEAFD;
+    background-color: var(--color-project-1);
 }
 
 .designsystem {
-    background-color: #5063F0;
+    background-color: var(--color-project-2);
 }
 
 .centauro {
-    background-color: #DFFFB5;
+    background-color: var(--color-project-3);
 }

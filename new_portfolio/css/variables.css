@@ -4,19 +4,23 @@
     
     --base-spacing: 8px;
 
-    --gray-medium: #535D67;
+    --gray-lightest: #FAFBFD;
     --gray-lighter: #7C97AC;
+    --gray-medium: #535D67;
+    
     --gray-dark: #192A3E;
     
 
     --color-primary: #0056B1;
 
+
+
     --text-large: 32px;
     --text-xlarge: 48px;
 
-    --color-project-1: #D6DBFF;
-    --color-project-2: #0056B1;
-    --color-project-2: #DFFFB5;
+    --color-project-1: #CEF5E5;
+    --color-project-2: #A6E5F5;
+    --color-project-3: #F5D3CE;
 
     --page-width: 960px;
   }

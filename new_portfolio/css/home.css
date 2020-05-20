@@ -30,7 +30,7 @@
 }
 
 .project img {
-    height: 624px;
+    height: 480px;
 }
 
 .project .tags li {
@@ -40,6 +40,13 @@
     padding: 4px;
     margin: 10px 0;
     border-radius: 8px;
+}
+
+.project a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+
 }
 
 .highlights {

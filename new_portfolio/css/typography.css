@@ -5,13 +5,28 @@
 
 a {
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--color-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gray-lighter);
 }
+
+a:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--gray-dark);
+}
+
+
 
 .display {
     font-size: var(--text-large);
     line-height: 120%;
+}
+
+.body {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 .caption {
