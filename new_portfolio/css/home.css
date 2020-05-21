@@ -8,18 +8,40 @@
     display: flex;
     justify-content: start;
     flex-direction: column;
-    padding: 48px 8%;
+    padding: 3rem 4rem;
     position: sticky;
     top: 0;
     box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.16);
 }
+
+
+.highlights {
+    line-height: 32px;
+}
+
+.panel-content {
+
+    margin: auto 0 auto 0;
+}
+
+.highlights a {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+
 
 .projects {
     width: 60vw;
 }
 
 .project {
-    padding: 48px 16%;
+    padding: 48px 16% 2.5rem 16%;
+    /*height: 90vh; */
+}
+
+.project a {
+
+    border-bottom: 1px solid var(--gray-lighter);
 }
 
 .project h3 {
@@ -46,10 +68,31 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--gray-dark);
-
 }
 
-.highlights {
-    line-height: 32px;
-    margin: 64% 0 0 0;
+/* Phones */
+@media only screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+    .panel {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        display: block;
+
+        padding: 3rem 2%;
+    }
+    .projects {
+        display: block;
+        width: 100vw;
+        position: relative;
+    }
+    .project {
+        padding: 4rem 2%;
+    }
+    .highlights {
+        margin: 4rem 0 0 0;
+    }
 }

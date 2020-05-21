@@ -2,8 +2,9 @@
 @import "./variables.css";
 @import "./typography.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap');
+
 .container {
-    width: 100%;
+    width: 100vw;
     position: relative;
     background: #ffffff;
     font-family: 'DM Sans', sans-serif;
@@ -20,9 +21,9 @@
     text-indent: -9999px;
 }
 
-header {
+/*header {
     background-color: var(--gray-dark);
-}
+} */
 
 .menu {
     height: 80px;
@@ -58,7 +59,7 @@ article {
     margin: auto;
 }
 
-button {
+a.button {
     background: #24323E;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -67,9 +68,20 @@ button {
     padding: 16px 24px;
     font-size: 16px;
     margin: 24px 0 0 0;
-    display: block;
+    display: inline-flex;
+    align-items: center;
 }
 
+a.button span { 
+    margin-right: 1rem;
+    display: flex;
+}
+
+ul.social  {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0 2rem 0;
+}
 .social li {
     border: 1px solid var(--gray-lighter);
     border-radius: 100%;
@@ -77,11 +89,18 @@ button {
     height: 48px;
     display: inline-block;
     margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.social_button {
+    border-bottom: 1px solid transparent;
 }
 
 .hero_image {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 /* Different projects themes */
@@ -97,3 +116,4 @@ button {
 .centauro {
     background-color: var(--color-project-3);
 }
+
