@@ -21,7 +21,7 @@ a span {
 
 .display {
     font-size: var(--text-large);
-    line-height: 120%;
+    line-height: 150%;
 }
 
 .body {
@@ -34,4 +34,26 @@ a span {
 .caption {
     font-size: 14px;
     color: var(--gray-medium);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0 0 1rem 0;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.5rem 0;
+    line-height: 150%;
+    font-weight: 700;
 }
