@@ -23,11 +23,11 @@
 .cover {
     display: flex;
     justify-content: center;
-    margin: 8% 0 0 0;
+    margin: 4% 0 0 0;
 }
 
 .cover img {
-    height: 480px;
+    height: 400px;
 }
 
 .summary {
@@ -62,6 +62,14 @@ article section .description {
     line-height: 150%;
     color: var(--gray-medium);
 }
+
+article section.dark-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--gray-dark);
+}
+
+article section.dark-section 
 
 .cover {
     background-color: var(--color-project-1);

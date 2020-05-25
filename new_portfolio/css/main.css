@@ -30,11 +30,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.menu {
     width: 960px;
     margin: auto;
+}
+
+.menu a:hover {
+    border-bottom: none;
 }
 
 a.button {
