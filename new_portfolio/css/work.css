@@ -69,7 +69,9 @@ article section.dark-section {
     background: var(--gray-dark);
 }
 
-article section.dark-section 
+article section.dark-section .one img {
+    height: 400px;
+}
 
 .cover {
     background-color: var(--color-project-1);
