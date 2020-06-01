@@ -96,3 +96,16 @@ a.social_button {
     background-color: var(--color-project-3);
 }
 
+.iphone-video {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.iphone-video img {
+    position: absolute;
+}
+
+.iphone-video video {
+    margin: 10px 0 0 0;
+}
