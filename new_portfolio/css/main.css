@@ -2,6 +2,11 @@
 @import "./variables.css";
 @import "./typography.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap');
+@font-face {
+    font-family: "Gilroy";
+    src: url("Gilroy-ExtraBold.otf");
+  }
+
 
 .container {
     width: 100vw;
