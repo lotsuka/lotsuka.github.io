@@ -5,13 +5,17 @@
     --base-spacing: 8px;
 
     --gray-lightest: #FAFBFD;
-    --gray-lighter: #7C97AC;
-    --gray-medium: #535D67;
-    
-    --gray-dark: #192A3E;
+    --gray-lighter: #DFE5ED;
+    --gray-light: #CEDAEB;
+    --gray-medium: #96A6BC;    
+    --gray-dark: #5C798F;
+    --gray-darker: #3F5064;
+    --gray-darkest: #192A3E;
+
     
 
     --color-primary: #0056B1;
+    --color-primary-light:#D6EAFF;
 
 
 

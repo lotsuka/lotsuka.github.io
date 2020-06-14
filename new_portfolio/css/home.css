@@ -8,7 +8,7 @@
     display: flex;
     justify-content: start;
     flex-direction: column;
-    padding: 3rem 4rem;
+    padding: 3rem 8rem 3rem 4rem;
     position: sticky;
     top: 0;
     box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.16);
@@ -19,12 +19,21 @@
     line-height: 32px;
 }
 
+.description {
+    margin-top: 1rem;
+}
+
 .panel-content {
 
     margin: auto 0 auto 0;
 }
 
 .highlights a {
+    border-bottom: 1px solid var(--color-primary-light);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.highlights a:hover {
     border-bottom: 1px solid var(--color-primary);
 }
 
@@ -39,9 +48,28 @@
     /*height: 90vh; */
 }
 
-.project a {
+.project-content {
+    animation: appear 0.64s ease-in-out;
+}
 
-    border-bottom: 1px solid var(--gray-lighter);
+@keyframes appear {
+    from {
+      transform: translateX(16%);
+      opacity: 0%;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
+.project p a {
+    border-bottom: 1px solid var(--gray-medium);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.project p a:hover {
+    border-bottom: 1px solid var(--gray-darkest);
 }
 
 .project h3 {
@@ -50,6 +78,11 @@
     letter-spacing: -1%;
     font-family: 'Gilroy', 'Poppins', sans-serif;
 }
+
+.project .body {
+    color: var(--gray-darker);
+}
+
 
 .project img {
     height: 480px;
@@ -67,7 +100,7 @@
 .project a {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--gray-dark);
+    color: var(--gray-darkest);
 }
 
 /* Phones */

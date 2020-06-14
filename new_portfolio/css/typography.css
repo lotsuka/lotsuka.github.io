@@ -1,6 +1,11 @@
 .subheading {
-    line-height: 32px;
-    color: var(--gray-medium);
+    line-height: 2rem;
+    color: var(--gray-darker);
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: 700;
 }
 
 a {
@@ -10,10 +15,12 @@ a {
     text-decoration: none;
 }
 
+/*
 a:hover {
     color: var(--color-primary);
-    border-bottom: 1px solid var(--gray-dark);
+    border-bottom: 1px solid var(--gray-darkest);
 }
+*/
 
 a span {
     border-bottom: none;
@@ -22,7 +29,6 @@ a span {
 .display {
     font-size: var(--text-large);
     line-height: 150%;
-
     font-family: 'Gilroy', 'Poppins', sans-serif;
 }
 
@@ -34,8 +40,9 @@ a span {
 }
 
 .caption {
-    font-size: 14px;
-    color: var(--gray-medium);
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    line-height: 150%;
 }
 
 h1 {
@@ -55,7 +62,6 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    margin: 0 0 0.5rem 0;
     line-height: 150%;
     font-weight: 700;
 }

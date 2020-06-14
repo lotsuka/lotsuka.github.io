@@ -31,23 +31,34 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container" role="main">
     <div class="panel">
       <h1 class="logo">Lucas Otsuka</h1>
 
-
-      <!--
-        <p class="caption">Product Designer</p>
-        <h3 class="display">I <span>design</span> meaningful digital products for your users</h3> 
-      -->
-
       <div class="panel-content">
-        <div class="highlights subheading">
-          <p>Product designer at <a href="https://www.quintoandar.com.br/" target="_blank">QuintoAndar</a></p>
-          <p>Mentor at <a href="https://awari.com.br/" target="_blank">Awari</a> and <a href="https://trydesignlab.com/" target="_blank">DesignLab</a>
-          </p>
-          <p>Based in Sao Paulo, Brazil</p>
-          <a href="#about">More about me <span>→</span></a>
+
+        <div class="highlights">
+
+          <div class="titles">
+            <p class="subheading">Product designer at <a href="https://www.quintoandar.com.br/"
+                target="_blank">QuintoAndar</a></p>
+            <p class="subheading">Mentor at <a href="https://awari.com.br/" target="_blank">Awari</a> and <a
+                href="https://trydesignlab.com/" target="_blank">DesignLab</a>
+            </p>
+            <p class="subheading">Based in Sao Paulo, Brazil</p>
+          </div>
+
+          <div class="description">
+            <p class="caption">I'm a full-stack product designer with a <strong>coding</strong> background. I specialize
+              in <strong>user research</strong>
+              and <strong>design systems</strong> with accessibility in mind. I love sharing knowledge. I've lived in
+              Australia, Canada
+              and
+              Italy before returning to Brazil. </p>
+
+            <!-- <a href="#about">More about me <span>→</span></a> -->
+          </div>
+
         </div>
 
         <div class="contact">
@@ -76,11 +87,6 @@
             </li>
           </ul>
 
-          <!--
-            <li><a class="social_button" href="mailto:lucasmotsuka@gmail.com">
-            Email</a></li>
-            -->
-
           <a class="button" href="mailto:lucasmotsuka@gmail.com" title="Email me">
             <span>
               <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,20 +103,25 @@
 
     <div class="projects">
       <div class="project ios">
-        <a href="work/quintoandar-ios/">
-          <h3 class="display">QuintoAndar iOS app</h3>
-          <!-- <p class="period"> Jan 2019 – Jul 2019</p>-->
-          <p class="body">How might we help people find their dream home quickier?</p>
-        </a>
-        <!-- <ul class="tags">
+        <div class="project-content">
+          <a href="work/quintoandar-ios/" target="_blank" aria-label="Read QuintoAndar iOS case study on Medium">
+            <h3 class="display">QuintoAndar iOS app</h3>
+            <!-- <p class="period"> Jan 2019 – Jul 2019</p>-->
+            <p class="body">How might we help people find their dream home quickier?</p>
+          </a>
+          <!-- <ul class="tags">
           <li>iOS</li>
           <li>mobile</li>
           <li>iOS</li>
         </ul> -->
-        <p><a href="work/quintoandar-ios/">Read case study →</a>
-        </p>
-        <div class="hero_image">
-          <img src="./img/hero_ios.png">
+          <p><a href="https://medium.com/@lucasotsuka/quintoandar-ios-app-618d37af6d1e" target="_blank"
+              aria-label="Read QuintoAndar iOS case study on Medium">Read case study on
+              Medium →</a>
+          </p>
+          <div class="hero_image">
+            <a href="https://medium.com/@lucasotsuka/quintoandar-ios-app-618d37af6d1e" target="_blank"
+              aria-label="Read QuintoAndar iOS case study on Medium"><img src="./img/hero_ios.png"></a>
+          </div>
         </div>
       </div>
 
@@ -128,10 +139,13 @@
       </div> -->
 
       <div class="project centauro">
-        <h3 class="display">Centauro mobile site</h3>
-        <!-- <p class="period"> Nov 2017 – Jan 2018</p> -->
-        <p class="body">How might we provide users an omnichannel experience?</p>
-
+        <div class="project-content">
+        <a href="https://medium.com/@lucasotsuka/centauro-mobile-site-case-study-20e842bb591a" target="_blank"
+          aria-label="Read Centauro case study on Medium">
+          <h3 class="display">Centauro mobile site</h3>
+          <!-- <p class="period"> Nov 2017 – Jan 2018</p> -->
+          <p class="body">How might we provide users an omnichannel experience?</p>
+        </a>
         <!--
           <ul class="tags">
           <li>iOS</li>
@@ -141,17 +155,22 @@
 
       -->
 
-        <a href="https://medium.com/@lucasotsuka/centauro-mobile-site-case-study-20e842bb591a" target="_blank">Read case
-          study →</a>
+        <p><a href="https://medium.com/@lucasotsuka/centauro-mobile-site-case-study-20e842bb591a" target="_blank"
+            aria-label="Read Centauro case study on Medium">Read case
+            study on Medium →</a></p>
         <div class="hero_image">
+          <a href="https://medium.com/@lucasotsuka/centauro-mobile-site-case-study-20e842bb591a" target="_blank"
+            aria-label="Read Centauro case study on Medium">
+            <img src="./img/home_hero_centauro.png" alt="Centauro m-site home page image">
 
-          <img src="./img/home_hero_centauro.png" alt="Centauro m-site home page image">
+          </a>
         </div>
-
       </div>
+
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
+  </main>
 </body>
 
 </html>
