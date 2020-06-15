@@ -1,13 +1,17 @@
+
+
 .container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+
+
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
-.panel {
+
+.header {
+    grid-column: 1 / 2;
     height: 100vh;
-    width: 40vw;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
     padding: 3rem 8rem 3rem 4rem;
     position: sticky;
     top: 0;
@@ -38,11 +42,9 @@
 }
 
 
-
-.projects {
-    width: 60vw;
+.main {
+    grid-column: 2 / 3;
 }
-
 .project {
     padding: 48px 16% 2.5rem 16%;
     /*height: 90vh; */
@@ -52,13 +54,19 @@
     animation: appear 0.64s ease-in-out;
 }
 
+footer {
+    grid-column: 2 / 3;
+    padding: 48px 16% 2.5rem 16%;
+    text-align: center;
+}
+
 @keyframes appear {
     from {
-      transform: translateX(16%);
+      /*transform: translateX(16%);*/
       opacity: 0%;
     }
     to {
-      transform: translateX(0);
+      /*transform: translateX(0); */
       opacity: 100%;
     }
   }
@@ -103,27 +111,30 @@
     color: var(--gray-darkest);
 }
 
+
 /* Phones */
 @media only screen and (max-width: 768px) {
     .container {
         display: block;
     }
-    .panel {
-        width: 100vw;
+    .header {
+        width: 100%;
         height: auto;
         position: relative;
         box-shadow: none;
         display: block;
-
-        padding: 3rem 2%;
+        padding: 3rem 1.5rem;
     }
     .projects {
         display: block;
-        width: 100vw;
+        width: 100%;
         position: relative;
     }
     .project {
-        padding: 4rem 2%;
+        padding: 4rem 1.5rem;
+    }
+    .project img {
+        height: 320px;
     }
     .highlights {
         margin: 4rem 0 0 0;
