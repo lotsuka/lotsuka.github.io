@@ -8,6 +8,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
 import Button from '@material-ui/core/Button';
 import Autocomplete, { createFilterOptions } from '@material-ui/lab/Autocomplete';
+import Typography from '@material-ui/core/Typography'
+import { makeStyles } from '@material-ui/core/styles';
 
 const filter = createFilterOptions();
 
@@ -193,14 +195,24 @@ const options = [
     'Uso - Serviço Condomínio',
 ];
 
+const useStyles = makeStyles({
+  root: {
+  }
+});
+
 export default function ControllableStates() {
     const [value, setValue] = React.useState(null);
     const [inputValue, setInputValue] = React.useState('');
 
+    const classes = useStyles();
+
     return (
         <div>
-            <p>Nome da despesa</p>
+            <Typography variant="Subheading" color="inherit">
+                        Selecione a despesa
+                    </Typography>
             <p>Qual nome mais se aproxima do que está escrito no boleto?</p>
+            
             <Autocomplete
                 value={value}
                 onChange={(event, newValue) => {
