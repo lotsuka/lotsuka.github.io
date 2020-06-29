@@ -10,15 +10,19 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-const NavBar = () => {
+
+export default function NavBar (props) {
+    const { history } = props;
     return (
         <div>
             <AppBar position="static">
                 <ToolBar>
-                    <IconButton edge="start" className="Back" color="inherit" aria-label="menu">
+                    <IconButton button edge="start" className="Back" color="inherit" aria-label="menu"  onClick={() => history.back()}>
                         <ArrowBack />
                     </IconButton>
-                    <Typography variant="title" color="inherit">
+
+                    
+                    <Typography variant="h5" color="inherit">
                         Selecione a despesa
                     </Typography>
                 </ToolBar>
@@ -26,5 +30,3 @@ const NavBar = () => {
         </div>
     )
 }
-
-export default NavBar;

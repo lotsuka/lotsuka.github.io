@@ -8,7 +8,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
 import Button from '@material-ui/core/Button';
 import Autocomplete, { createFilterOptions } from '@material-ui/lab/Autocomplete';
-
+import Typography from '@material-ui/core/Typography'
 const filter = createFilterOptions();
 
 /*export default function FreeSoloCreateOptionDialog() {
@@ -199,8 +199,9 @@ export default function ControllableStates() {
 
     return (
         <div>
-            <p>Nome da despesa</p>
-            <p>Qual nome mais se aproxima do que está escrito no boleto?</p>
+            
+            <Typography align="left" variant="h6">Nome da despesa</Typography>
+            <Typography variant="caption" align="left" >Qual nome mais se aproxima do que está escrito no boleto?</Typography>
             <Autocomplete
                 value={value}
                 onChange={(event, newValue) => {
@@ -231,7 +232,7 @@ export default function ControllableStates() {
 
                 id="controllable-states-demo"
                 options={options}
-                style={{ width: 300 }}
+                style={{ width: '100%', marginBottom: '48px' }}
                 renderInput={(params) => <TextField {...params} label="" variant="outlined" />}
             />
         </div>
