@@ -217,11 +217,6 @@ export default function ControllableStates() {
                     }
                   }}
 
-                  
-                  
-                  
-                  
-
                 inputValue={inputValue}
                 noOptionsText="Não achei a despesa na lista"
 

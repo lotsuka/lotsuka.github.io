@@ -13,9 +13,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 export default function NavBar (props) {
     const { history } = props;
+    const style = {
+        background: 'white',
+        color: 'black'
+      };
+
     return (
         <div>
-            <AppBar position="static">
+            <AppBar position="static" style={style}>
                 <ToolBar>
                     <IconButton button edge="start" className="Back" color="inherit" aria-label="menu"  onClick={() => history.back()}>
                         <ArrowBack />
