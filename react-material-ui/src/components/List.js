@@ -6,12 +6,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronRight from '@material-ui/icons/ChevronRight';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        maxWidth: 360,
         backgroundColor: theme.palette.background.paper,
     },
 }));
@@ -22,18 +22,17 @@ export default function FolderList() {
 
     return (
         <List className={classes.root}>
-            <a href="https://lotsuka.com" >
-                <ListItem>
+            <ListItem button component={Link} to="/Acordos">
 
-                    <ListItemText primary="Acordos, Impostos e Tarifas" secondary="Acordos referente a algum débito anterior do condomínio, impostos ou tarifas." />
-                    <ListItemSecondaryAction>
-                        <IconButton edge="end" aria-label="comments">
-                            <ChevronRight />
-                        </IconButton>
-                    </ListItemSecondaryAction>
-                </ListItem>
-            </a>
-            <ListItem>
+                <ListItemText primary="Acordos, Impostos e Tarifas" secondary="Acordos referente a algum débito anterior do condomínio, impostos ou tarifas." />
+                <ListItemSecondaryAction>
+                    <IconButton edge="end" aria-label="comments">
+                        <ChevronRight />
+                    </IconButton>
+                </ListItemSecondaryAction>
+            </ListItem>
+            <Divider />
+            <ListItem button component={Link} to="/Fundos">
                 <ListItemText primary="Fundos" secondary="Fundos para eventual inadimplência, obras no condomínio ou cobrir despesas não previstas. " />
                 <ListItemSecondaryAction>
                     <IconButton edge="end" aria-label="comments">
@@ -42,7 +41,9 @@ export default function FolderList() {
                 </ListItemSecondaryAction>
 
             </ListItem>
-            <ListItem>
+            <Divider />
+
+            <ListItem button component={Link} to="/ExpenseGroup">
                 <ListItemText primary="Reformas, individualizações e rateios" secondary="Valores destinados ao pagamento de serviços ou obras para o funcionamento do condomínio" />
                 <ListItemSecondaryAction>
                     <IconButton edge="end" aria-label="comments">
@@ -50,7 +51,9 @@ export default function FolderList() {
                     </IconButton>
                 </ListItemSecondaryAction>
             </ListItem>
-            <ListItem>
+
+            <Divider />
+            <ListItem button component={Link} to="/ExpenseGroup">
                 <ListItemText primary="Outras despesas" secondary="Despesas diversas, como deficit orcamentário, bonificação de fim de ano e usos de serviços do consomínio." />
                 <ListItemSecondaryAction>
                     <IconButton edge="end" aria-label="comments">
@@ -58,6 +61,7 @@ export default function FolderList() {
                     </IconButton>
                 </ListItemSecondaryAction>
             </ListItem>
+            <Divider />
         </List>
     );
 }

@@ -9,8 +9,6 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Button from '@material-ui/core/Button';
 import Autocomplete, { createFilterOptions } from '@material-ui/lab/Autocomplete';
 import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/core/styles';
-
 const filter = createFilterOptions();
 
 /*export default function FreeSoloCreateOptionDialog() {
@@ -195,24 +193,15 @@ const options = [
     'Uso - Serviço Condomínio',
 ];
 
-const useStyles = makeStyles({
-  root: {
-  }
-});
-
 export default function ControllableStates() {
     const [value, setValue] = React.useState(null);
     const [inputValue, setInputValue] = React.useState('');
 
-    const classes = useStyles();
-
     return (
         <div>
-            <Typography variant="Subheading" color="inherit">
-                        Selecione a despesa
-                    </Typography>
-            <p>Qual nome mais se aproxima do que está escrito no boleto?</p>
             
+            <Typography align="left" variant="h6">Nome da despesa</Typography>
+            <Typography variant="caption" align="left" >Qual nome mais se aproxima do que está escrito no boleto?</Typography>
             <Autocomplete
                 value={value}
                 onChange={(event, newValue) => {
@@ -228,11 +217,6 @@ export default function ControllableStates() {
                     }
                   }}
 
-                  
-                  
-                  
-                  
-
                 inputValue={inputValue}
                 noOptionsText="Não achei a despesa na lista"
 
@@ -243,7 +227,7 @@ export default function ControllableStates() {
 
                 id="controllable-states-demo"
                 options={options}
-                style={{ width: 300 }}
+                style={{ width: '100%', marginBottom: '48px' }}
                 renderInput={(params) => <TextField {...params} label="" variant="outlined" />}
             />
         </div>
