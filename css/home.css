@@ -1,10 +1,6 @@
-
-
 .container {
     /* display: flex;
     justify-content: space-between; */
-
-
     display: grid;
     grid-template-columns: 40% 60%;
 }
@@ -18,7 +14,6 @@
     box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.16);
 }
 
-
 .highlights {
     line-height: 32px;
 }
@@ -27,8 +22,11 @@
     margin-top: 1rem;
 }
 
-.panel-content {
+h1.logo {
+    margin-bottom: 3rem;
+}
 
+.panel-content {
     margin: auto 0 auto 0;
 }
 
@@ -37,17 +35,20 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
+
 .highlights a:hover {
     border-bottom: 1px solid var(--color-primary);
 }
 
-
 .main {
     grid-column: 2 / 3;
 }
+
 .project {
     padding: 48px 16% 2.5rem 16%;
     /*height: 90vh; */
+    position: relative;
+    overflow: hidden;
 }
 
 .project-content {
@@ -62,20 +63,21 @@ footer {
 
 @keyframes appear {
     from {
-      /*transform: translateX(16%);*/
-      opacity: 0%;
+        /*transform: translateX(16%);*/
+        opacity: 0%;
     }
     to {
-      /*transform: translateX(0); */
-      opacity: 100%;
+        /*transform: translateX(0); */
+        opacity: 100%;
     }
-  }
+}
 
 .project p a {
     border-bottom: 1px solid var(--gray-medium);
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
+
 .project p a:hover {
     border-bottom: 1px solid var(--gray-darkest);
 }
@@ -90,7 +92,6 @@ footer {
 .project .body {
     color: var(--gray-darker);
 }
-
 
 .project img {
     height: 480px;
@@ -112,8 +113,23 @@ footer {
 }
 
 
+.hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 0 0 50%;
+    background: rgba(0, 0, 0, 0.08);
+    top: 0;
+    right: -80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 4rem;
+}
+
 /* Phones */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1023px) {
     .container {
         display: block;
     }
@@ -132,11 +148,25 @@ footer {
     }
     .project {
         padding: 4rem 1.5rem;
+        position: relative;
+        cursor: pointer;
+        display: block;
     }
     .project img {
         height: 320px;
     }
+}
+
+/* iPad, except iPad Pro */
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
     .highlights {
-        margin: 4rem 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    div.titles { 
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 }
