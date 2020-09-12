@@ -5,87 +5,95 @@
 */
 
 .article-body p {
-    font-size: 1.2rem;
-    line-height: 150%;
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 .article-title {
-    text-align: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-background, header {
-    background-color: var(--color-project-1);
+header {
+  background-color: var(--main-bg-color);
 }
 
 .hero-background {
-    padding: 4% 0;
+  padding: 4% 0 0 0;
+  position: relative;
 }
 
 .cover {
-    display: flex;
-    justify-content: center;
-    margin: 4% 0 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 4% 0 0 0;
+  position: relative;
+  z-index: 2;
 }
 
 .cover img {
-    height: 400px;
+  height: 400px;
 }
 
 .summary {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--gray-lightest);
-    border-radius: 1rem;
-    margin: 2rem 0 2rem 0;
-    padding: 2rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--gray-lightest);
+  border-radius: 1rem;
+  margin: 2rem 0 2rem 0;
+  padding: 2rem;
 }
 .summary .topic {
-    max-width: 220px;
-    margin-right: 1rem;
+  max-width: 220px;
+  margin-right: 1rem;
 }
 .summary .topic:last-child {
-    margin-right: none;
+  margin-right: none;
 }
 
 article section {
-    display: flex;
-    margin: 3rem 0;
-
+  display: flex;
+  margin: 3rem 0;
 }
 article section .headings {
-    width: 28%;
+  width: 28%;
 }
 
 article section .description {
-    width: 72%;
-    font-size: 1.25rem;
-    line-height: 150%;
-    color: var(--gray-medium);
+  width: 72%;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: var(--gray-medium);
 }
 
 article section.dark-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: var(--gray-darkest);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--gray-darkest);
 }
 
 article section.dark-section .one img {
-    height: 400px;
+  height: 400px;
 }
-
-.cover {
-    background-color: var(--color-project-1);
+.hero-background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 64%;
+  background-color: var(--color-project-1);
+  z-index: 0;
+  width: 100vw;
 }
 
 .page-width {
-    width: var(--page-width);
-    margin: auto;
+  width: var(--page-width);
+  margin: auto;
 }
 
 .challenge {
-    background: #E6F4F1;
-    border-radius: 16px;
-    padding: 1rem;
-    margin: 2rem 0;
+  background: #e6f4f1;
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 2rem 0;
 }
-    

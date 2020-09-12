@@ -1,30 +1,29 @@
 @import "./reset.css";
 @import "./variables.css";
 @import "./typography.css";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap");
 
 @font-face {
-    font-family: "Gilroy";
-    src: url("Gilroy-ExtraBold.otf");
-  }
-
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBold.otf");
+}
 
 .container {
-    width: 100%;
-    position: relative;
-    background: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-    color: var(--gray-darkest);
-    font-size: 1em;
-    line-height: 150%;
+  width: 100%;
+  position: relative;
+  background: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  color: var(--gray-darkest);
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .logo {
-    background: url("../img/lotsuka_logo.png") no-repeat center center;
-    background-size: 207px;
-    width: 207px;
-    height: 25px;
-    text-indent: -9999px;
+  background: url("../img/lotsuka_logo.png") no-repeat center center;
+  background-size: 207px;
+  width: 207px;
+  height: 25px;
+  text-indent: -9999px;
 }
 
 /*header {
@@ -32,108 +31,104 @@
 } */
 
 .menu {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 960px;
-    margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin: auto;
 }
 
 a.button {
-    background: var(--gray-darkest);
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
-    /*box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);*/
-    border-radius: 8px;
-    color: white;
-    font-weight: 700;
-    padding: 16px 24px;
-    font-size: 16px;
-    margin: 24px 0 0 0;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-
+  background: var(--gray-darkest);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.25);
+  /*box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);*/
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 24px;
+  font-size: 16px;
+  margin: 24px 0 0 0;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 }
 
-
-  
 a.button:hover {
-    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+  box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
 
-a.button span { 
-    margin-right: 1rem;
-    display: flex;
+a.button span {
+  margin-right: 1rem;
+  display: flex;
 }
 
-ul.social  {
-    display: flex;
-    flex-direction: row;
-    margin: 1.5rem 0 2rem 0;
+ul.social {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 0 2rem 0;
 }
 .social li span {
-    border: 1px solid var(--gray-lighter);
-    border-radius: 100%;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    margin-right: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid var(--gray-lighter);
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a.social_button {
-    border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 a.social_button:hover span {
-    background: var(--gray-lighter);
-    transition: all 0.4s ease-in-out;
+  background: var(--gray-lighter);
+  transition: all 0.4s ease-in-out;
 }
 
 .hero_image {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 footer {
-    background-color: var(--gray-darkest);    
+  background-color: var(--gray-darkest);
 }
 
 footer .signature {
-    padding: 3rem 2rem;
-    color: var(--gray-lightest);
-
+  padding: 3rem 2rem;
+  color: var(--gray-lightest);
 }
 
 /* Different projects themes */
 
 .ios {
-    background-color: var(--color-project-1);
+  background-color: var(--color-project-1);
 }
 
 .designsystem {
-    background-color: var(--color-project-2);
+  background-color: var(--color-project-2);
 }
 
 .centauro {
-    background-color: var(--color-project-3);
+  background-color: var(--color-project-3);
 }
 
 .retrolley {
-    background-color: #DEDEDE;
+  background-color: #dedede;
 }
 .iphone-video {
-    position: relative;
-    justify-content: center;
-    display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .iphone-video img {
-    position: absolute;
+  position: absolute;
 }
 
 .iphone-video video {
-    margin: 10px 0 0 0;
+  margin: 10px auto 0 13px;
+  width: 176px;
 }
