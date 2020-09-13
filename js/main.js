@@ -1,3 +1,57 @@
+// const callback = function(entries) {
+//   entries.forEach(entry => {
+//     entry.target.classList.toggle("is-visible");
+//   });
+// };
+
+// const observer = new IntersectionObserver(callback);
+
+// const targets = document.querySelectorAll(".show-on-scroll");
+// targets.forEach(function(target) {
+//   observer.observe(target);
+// });
+
+const scroll =
+  window.requestAnimationFrame ||
+  function (callback) {
+    window.setTimeout(callback, 1000 / 60);
+  };
+
+const elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+function loop() {
+  let visibleElements = 0;
+
+  elementsToShow.forEach(function (element, index) {
+    if (isElementInViewport(element)) {
+      setTimeout(function () {
+        element.classList.add("is-visible");
+      }, Math.min(index, 1)*100+100);
+    }
+  });
+  scroll(loop);
+}
+
+loop();
+
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0 && rect.bottom >= 0) ||
+    (rect.bottom >=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <=
+        (window.innerHeight || document.documentElement.clientHeight)) ||
+    (rect.top >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+
 /* let project = document.querySelectorAll(".ios")
 
 project.forEach(element => {
@@ -25,5 +79,3 @@ project.forEach(element => {
     }) 
 
 }) */
-
-
