@@ -52,6 +52,31 @@ function isElementInViewport(el) {
   );
 }
 
+let ios = document.querySelector(".ios")
+let centauro = document.querySelector(".centauro")
+let retrolley = document.querySelector(".retrolley")
+
+ios.addEventListener("click", () => {
+  window.location = "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a"
+})
+
+centauro.addEventListener("click", () => {
+  window.location = "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040"
+})
+
+retrolley.addEventListener("click", () => {
+  window.location = "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli"
+})
+
+
+
+// project.forEach(element => {
+//   element.addEventListener("mouveover", () => {
+//        console.log("maoi ")
+//   })})
+
+
+
 /* let project = document.querySelectorAll(".ios")
 
 project.forEach(element => {
