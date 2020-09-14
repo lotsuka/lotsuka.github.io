@@ -1,16 +1,3 @@
-// const callback = function(entries) {
-//   entries.forEach(entry => {
-//     entry.target.classList.toggle("is-visible");
-//   });
-// };
-
-// const observer = new IntersectionObserver(callback);
-
-// const targets = document.querySelectorAll(".show-on-scroll");
-// targets.forEach(function(target) {
-//   observer.observe(target);
-// });
-
 const scroll =
   window.requestAnimationFrame ||
   function (callback) {
@@ -26,7 +13,7 @@ function loop() {
     if (isElementInViewport(element)) {
       setTimeout(function () {
         element.classList.add("is-visible");
-      }, Math.min(index, 1)*100+100);
+      }, Math.min(index, 1) * 100 + 100);
     }
   });
   scroll(loop);
@@ -52,30 +39,50 @@ function isElementInViewport(el) {
   );
 }
 
-let ios = document.querySelector(".ios")
-let centauro = document.querySelector(".centauro")
-let retrolley = document.querySelector(".retrolley")
+// Making entire projects div clickable
 
-ios.addEventListener("click", () => {
-  window.location = "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a"
-})
+let ios = document.querySelector(".ios");
+let centauro = document.querySelector(".centauro");
+let retrolley = document.querySelector(".retrolley");
 
-centauro.addEventListener("click", () => {
-  window.location = "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040"
-})
+ios.addEventListener("click", (e) => {
+  if (e.target.tagName !== "A") {
+    window.location =
+      "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a";
+  }
+});
 
-retrolley.addEventListener("click", () => {
-  window.location = "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli"
-})
+centauro.addEventListener("click", (e) => {
+  if (e.target.tagName !== "A") {
+    window.location =
+      "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040";
+  }
+});
 
+retrolley.addEventListener("click", (e) => {
+  if (e.target.tagName !== "A") {
+    window.location =
+      "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli";
+  }
+});
 
+// const callback = function(entries) {
+//   entries.forEach(entry => {
+//     entry.target.classList.toggle("is-visible");
+//   });
+// };
+
+// const observer = new IntersectionObserver(callback);
+
+// const targets = document.querySelectorAll(".show-on-scroll");
+// targets.forEach(function(target) {
+//   observer.observe(target);
+// });
 
 // project.forEach(element => {
 //   element.addEventListener("mouveover", () => {
 //        console.log("maoi ")
 //   })})
-
-
 
 /* let project = document.querySelectorAll(".ios")
 

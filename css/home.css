@@ -30,15 +30,15 @@ h1.logo {
   margin: auto 0 auto 0;
 }
 
-.highlights a {
-  border-bottom: 1px solid var(--color-primary-light);
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+.highlights a.underline::before {
+  background-color: var(--color-primary-light);
+
 }
 
-.highlights a:hover {
-  border-bottom: 1px solid var(--color-primary);
+.highlights a.underline:hover::before {
+  background-color: var(--color-primary);
 }
+
 
 .main {
   grid-column: 2 / 3;
@@ -62,25 +62,16 @@ footer {
   text-align: center;
 }
 
-@keyframes appear {
-  from {
-    /*transform: translateX(16%);*/
-    opacity: 0%;
-  }
-  to {
-    /*transform: translateX(0); */
-    opacity: 100%;
-  }
-}
+
 
 .project p a {
-  border-bottom: 1px solid var(--gray-medium);
+  /* border-bottom: 1px solid var(--gray-medium); */
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
 .project p a:hover {
-  border-bottom: 1px solid var(--gray-darkest);
+  /* border-bottom: 1px solid var(--gray-darkest); */
 }
 
 .project h3 {
@@ -203,6 +194,9 @@ footer {
     grid-column: 1/2;
     grid-row: 1/3;
   }
+  .description {
+    margin-top: 0;
+  }
 }
 
 /* iPads portrait  */
@@ -211,4 +205,5 @@ footer {
         padding: 3rem 2rem;
       }
     }
+
 
