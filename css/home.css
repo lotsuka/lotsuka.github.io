@@ -70,10 +70,6 @@ footer {
   transition-timing-function: ease-in-out;
 }
 
-.project p a:hover {
-  /* border-bottom: 1px solid var(--gray-darkest); */
-}
-
 .project h3 {
   font-size: 2em;
   font-weight: 700;

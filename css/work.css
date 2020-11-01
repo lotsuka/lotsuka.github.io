@@ -97,3 +97,11 @@ article section.dark-section .one img {
   padding: 1rem;
   margin: 2rem 0;
 }
+
+.project-hero-image img {
+  width: 100%;
+}
+
+.project-hero-image {
+  background-color: var(--color-project-1);
+}
