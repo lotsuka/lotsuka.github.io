@@ -65,3 +65,7 @@ h3 {
     line-height: 150%;
     font-weight: 700;
 }
+
+p, li {
+    line-height: 150%;
+}

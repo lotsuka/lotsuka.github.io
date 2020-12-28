@@ -54,7 +54,7 @@ header {
   justify-content: space-evenly;
   background-color: var(--gray-lightest);
   border-radius: 1rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem auto 2rem auto;
   padding: 2rem;
 }
 
@@ -69,11 +69,32 @@ header {
   margin-right: none;
 }
 
-article section.columns {
+.columns {
   display: grid;
   grid-template-columns: minmax(100px, 32%) auto;
   grid-gap: 0 1rem;
-  border-bottom: 1px solid var(--gray-lighter);
+  margin: 2rem auto 0 auto;
+}
+
+.light-section .columns {
+  margin: 0 auto;
+}
+
+.columns ul, .columns ol {
+  padding: 1.5rem;
+}
+
+.columns ul li {
+  list-style-type: circle;
+  padding: 0 0 1rem 1rem;
+}
+
+.columns ol li {
+  list-style-type: decimal;
+  padding: 0 0 1rem 1rem;
+}
+.columns ol li::marker {
+  color: var(--gray-dark);
 }
 
 article section .headings {
@@ -87,21 +108,48 @@ article section .description {
   color: var(--gray-darker);
 } 
 
-article section.dark-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: var(--gray-darkest);
+.description .quote {
+  font-weight: 800;
 }
+
+article section.dark-section {
+  background: var(--gray-darkest);
+  padding: 2rem 0;
+}
+
+article section.dark-section li {
+  color: var(--main-bg-color);
+}
+
+
 
 article section.light-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background: var(--gray-lightest);
+  padding: 2rem 0;
 }
 
-article section.dark-section .one img {
-  height: 400px;
+.hr {
+  border-bottom: 1px solid var(--gray-lighter);
 }
+
+.white {
+  color: var(--main-bg-color);
+}
+
+.headings img {
+  width: 235px;
+  margin: 2rem 0;
+}
+
+.description img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+.page-width-img img {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
 .hero-background:after {
   content: "";
   position: absolute;
@@ -115,7 +163,7 @@ article section.dark-section .one img {
 .page-width {
   /* max-width: var(--page-width); */
   max-width: 80%;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto;
 }
 
 .challenge {
@@ -135,14 +183,7 @@ article section.dark-section .one img {
   background-color: var(--color-project-1);
 }
 
-section.columns ul {
-  padding: 1.5rem;
-}
 
-section.columns ul li {
-  list-style-type: circle;
-  padding: 0 0 1rem 0;
-}
 
 @media only screen and (max-width: 1023px) {
  article section.columns { 
