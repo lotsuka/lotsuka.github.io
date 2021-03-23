@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-h1.article-title  {
+h1.article-title {
   margin: 2rem 0 4rem 0; /* title of project */
 }
 
@@ -47,7 +47,6 @@ header {
   height: 400px;
 }
 
-
 .summary {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +56,6 @@ header {
   margin: 2rem auto 2rem auto;
   padding: 2rem;
 }
-
 
 .summary .topic {
   /*max-width: 220px; */
@@ -80,7 +78,8 @@ header {
   margin: 0 auto;
 }
 
-.columns ul, .columns ol {
+.columns ul,
+.columns ol {
   padding: 1.5rem;
 }
 
@@ -106,7 +105,7 @@ article section .description {
   font-size: 1.25rem;
   line-height: 150%;
   color: var(--gray-darker);
-} 
+}
 
 .description .quote {
   font-weight: 800;
@@ -121,11 +120,9 @@ article section.dark-section li {
   color: var(--main-bg-color);
 }
 
-
-
 article section.light-section {
   background: var(--gray-lightest);
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .hr {
@@ -143,7 +140,8 @@ article section.light-section {
 
 .description img {
   max-width: 100%;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  display: block;
 }
 .page-width-img img {
   max-width: 100%;
@@ -161,8 +159,7 @@ article section.light-section {
 }
 
 .page-width {
-  /* max-width: var(--page-width); */
-  max-width: 80%;
+  padding: 0 10%;
   margin: 2rem auto 0 auto;
 }
 
@@ -183,10 +180,24 @@ article section.light-section {
   background-color: var(--color-project-1);
 }
 
-
+.iphone-8-frame {
+  background-image: url("../img/iphone-black-frame@2x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 320px;
+  width: 320px;
+  height: 544px;
+  margin: 4rem auto 0;
+}
+.iphone-8-frame img {
+  width: 208px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 56px;
+}
 
 @media only screen and (max-width: 1023px) {
- article section.columns { 
-   display: block;
- }
+  article section.columns {
+    display: block;
+  }
 }

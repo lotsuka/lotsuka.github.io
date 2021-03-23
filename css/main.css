@@ -160,9 +160,12 @@ footer .signature {
 
 .iphone-video img {
   position: absolute;
+  /* width: 235px; */
 }
 
 .iphone-video video {
   margin: 10px auto 0 13px;
   width: 176px;
+  
+  /* width: 208px; */
 }
