@@ -275,7 +275,7 @@
           </div>
         </section>
 
-        <section class="page-width">
+        <section>
           <div class="page-width-img">
             <img
               src="../../img/ios/design_critique.jpg"
@@ -285,9 +285,10 @@
         </section>
 
         <section class="dark-section">
-          <div class="page-width columns hr">
+          <h2 class="white page-width">The concept</h2>
+          <div class="page-width columns">
             <div class="headings">
-              <h3 class="white">The concept</h3>
+              
 
               <div class="iphone-video concept">
                 <img src="../../img/iphone_frame.png" alt="iPhone frame" />
@@ -329,7 +330,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="page-width columns">
           <div class="headings">
             <h4>Usability Tests</h4>
           </div>
@@ -347,152 +348,96 @@
 
             <ul>
               <li>
-                People praised the price displayed directly on the map but
-                complained about the time it took to get to the zoom level that
-                would show the prices. Hence, we’ve decided to display price
-                pins for some properties when they were not close to others.
+                People praised the price displayed directly on the map but complained about the time it took to get to the zoom level that would show the prices. Hence,  we’ve decided to display price pins for some properties when they were not close to others.
               </li>
               <li>
-                People couldn’t successfully understand the pins of building
-                with more than one property, so we’ve decided to use circles
-                with numbers instead.
+                People couldn’t successfully understand the pins of buildings with more than one property, so we’ve decided to use circles with numbers instead.
               </li>
             </ul>
 
-            <p>
-              The map navigation tests also gave us good insights into how
-              people use filters and their expectations. Thus, we’ve decided to
-              work on the filters controls and improving the feedback about
-              which filters were applied for the next iteration of the design.
-            </p>
+            
           </div>
         </section>
 
-        <section>
+        <section class="page-width columns">
           <div class="headings">
-            <h2>Round two: Filters</h2>
+            <h6>2nd round</h6>
+            <h2>Filters</h2>
           </div>
 
           <div class="description">
-            <!-- Photo of filters page and filters on the map -->
             <p>
-              This is what we've learned on the usability tests and the action
-              we've overtaken afterward:
+              The map navigation tests also gave us good insights into how people use filters and their expectations.  Thus, we’ve decided to work on the filters controls and improving the feedback about which filters were applied for the next iteration of the design.
             </p>
-
             <ul>
-              <li>
-                A lot of users tried to use several filters at once and got no
-                results. But there was not enough feedback that the filters
-                we're applied, so the users kept waiting for the properties to
-                load on the map. Hence, we've added a feedback message
-                immediately after filters were applied to the map, including a
-                modal saying no results were found and inviting the user to try
-                other parameters.
-              </li>
-
-              <li>
-                Some users would go back to the map view and forget that filters
-                were already applied, so we made clear which filters were
-                applied to the map view and make easy for the user to remove any
-                of those
-              </li>
-
-              <li>
-                We've enhanced the distinction between rent prices and the full
-                price and allow users to type the price range (not only for
-                accessibility matter but also because users struggled to
-                correctly set the price they wanted)
-              </li>
+              <li>People couldn’t easily find which filters were applied on the map</li>
+              <li>People didn't know if the filter was applied to the map</li>
+              <li>When people applied too many filters they wouldn't get a message saying there were no results to those filters</li>
             </ul>
+
+            <p>
+              Thus, we’ve decided to work on the filters controls and improving the feedback about which filters were applied for the next iteration of the design.
+            </p>
           </div>
         </section>
 
-        <section>
+        <section class="page-width mobile-image-text">
+          <div>
+            <img src="../../img/ios/filters_ios.png" alt="filters" />
+            <p>We've enhanced the distinction between rent prices and the full price and allow users to type the price range (not only for accessibility matter but also because users struggled to correctly set the price they wanted)</p>
+          </div>
+          
+          <div>
+            <img src="../../img/ios/filters_map_ios.png" alt="filters" />
+            <p>People got no results when using several filters at once, but there wasn't enough feedback that the filters were applied so they kept waiting for the properties to load on the map. Thus, we've added a  message saying no results were found and inviting the user to try other filters</p>
+          </div>
+
+          <div>
+            <img src="../../img/ios/no_results_ios.png" alt="Image showing no results feedback" />
+            <p>Some users would go back to the map view and forget what filters were already applied, so we made clear which filters paramenters were applied to the map view and made easy for the user to remove any of those</p>
+          </div>
+
+        </section>  
+
+        <section class="light-section page-width columns">
           <div class="headings">
-            <h2>Third round: viewed history and favorites</h2>
+            <h6>3rd round</h6>
+            <h2>Email alerts</h2>
           </div>
 
           <div class="description">
             <p>
-              With all of the previous improvements we've already reached a good
-              number of visits booking, but we’ve decided to stretch our goal.
-              We concluded that if we focus on improving the Favorites and the
-              Alerts features we could boost visits bookings. Alerts is a
-              feature where users subscribe to regular emails that show them
-              properties that they might like, according to their filters.
+              With all of the previous improvements we've already reached a good number of visits booking, but we’ve decided to stretch our goal. We concluded that if we focus on improving the Favorites and the Alerts features we could boost visits bookings. Alerts is a feature where users subscribe to regular emails that show them properties that they might like, according to their filters.
             </p>
 
             <p>
-              From analytics data and user interviews we've learned that even
-              though more than half of the users used those features, there was
-              a good opportunity to increase their adoption.
+              From analytics data and user interviews we've learned that even though more than half of the users used those features, there was a good opportunity to increase their adoption.
             </p>
 
             <p>
               So we’ve created some A/B tests to learn if some little tweaks
               would indeed increase visits. We’ve learned that:
             </p>
-
-            <ul>
-              <li>
-                If we showed a suggestion to create an alert in the carrousel,
-                we would increase visit bookings.
-              </li>
-              <li>
-                If we made the Favorite button clearer and more visible on the
-                properties page, people would increase the usage of the feature
-                and consequently book more visits.
-              </li>
-              <li>
-                If we suggested users to create an alert right after they first
-                apply a filter we would increase alerts creation and
-                consequently, visit bookings.
-              </li>
-            </ul>
           </div>
         </section>
 
-        <section>
-          <div class="headings">
-            <h3>Viewed properties</h3>
+        <section class="page-width mobile-image-text">
+          <div>
+            <img src="../../img/ios/filters_ios.png" alt="filters" />
+            <p>If we showed a suggestion to create an alert in the carrousel, we would increase visit bookings.</p>
           </div>
-          <div class="description">
-            <p>
-              Even though we've showed on the map which properties the users has
-              already viewed, user tests indicated that people still missed a
-              easier way to easily retrieve those properties. This, we built a
-              dedicated list of viewed properties history. However, we were not
-              sure where to place that feature for customer to adoption.
-            </p>
-
-            <h4>Card sorting</h4>
-
-            <p>
-              We've gathered some user's contacts and sent an email to them
-              inviting for an interview in person. We've recruited 6 people for
-              a card sorting and usability test session in house, not only to
-              find out where to place this new feature but to grasp how users
-              would organize other features on the app. We've learned that:
-            </p>
-
-            <ul>
-              <li>
-                1. People tended to see this History feature more related to the
-                Favorites section than to their profile section
-              </li>
-              <li>
-                2. We needed to change the Favorite section label on the bottom
-                bar to Viewed, otherwise not many users engage with this new
-                feature. The favorite section would be alongside it.
-              </li>
-            </ul>
+          
+          <div>
+            <img src="../../img/ios/filters_map_ios.png" alt="filters" />
+            <p>If we suggested users to create an alert right after they first apply a filter we would increase alerts creation and consequently, visit bookings.</p>
           </div>
-        </section>
 
-        <section class="">
+        </section>  
+
+
+        <section class="page-width columns">
           <div class="headings">
-            <h2>Last round: making the app accessible</h2>
+            <h2>Making the app accessible</h2>
           </div>
           <div class="description">
             <p>
@@ -503,15 +448,6 @@
               with blind people and we even hired a blind QA tester to help us
               conform to accessibility guidelines.
             </p>
-          </div>
-        </section>
-
-        <section class="">
-          <div class="headings">
-            <h4>Key improvements</h4>
-          </div>
-
-          <div class="description">
             <ul>
               <li>
                 We've added proper description to abbreviations, for example,
@@ -529,7 +465,7 @@
           </div>
         </section>
 
-        <section class="">
+        <section class="page-width columns">
           <div class="headings">
             <h2>Learnings</h2>
           </div>

@@ -74,8 +74,9 @@ header {
   margin: 2rem auto 0 auto;
 }
 
-.light-section .columns {
-  margin: 0 auto;
+.light-section.columns {
+  margin: 0 auto !important;
+  padding: 4rem 10%;
 }
 
 .columns ul,
@@ -148,8 +149,9 @@ article section.light-section {
 }
 .page-width-img img {
   max-width: 100%;
-  margin: 2rem auto;
+  margin: 2rem auto 8rem auto;
 }
+
 
 .hero-background:after {
   content: "";
@@ -162,8 +164,12 @@ article section.light-section {
 }
 
 .page-width {
-  padding: 0 10%;
-  margin: 2rem auto 0 auto;
+  margin: 0 10% 0 10%;
+  padding: 5rem 0 3rem 0;
+}
+
+h2.page-width {
+  padding: 4rem 0 0 0;
 }
 
 .challenge {
@@ -207,8 +213,19 @@ article section.light-section {
   margin: 0 auto;
 }
 
+.mobile-image-text {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-image-text div {
+  width: 30%;
+}
+.mobile-image-text div img {
+  width: 320px;
+}
+
 @media only screen and (max-width: 1023px) {
-  article section.columns {
+  article .columns {
     display: block;
   }
 }
