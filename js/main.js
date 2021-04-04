@@ -45,26 +45,32 @@ let ios = document.querySelector(".ios");
 let centauro = document.querySelector(".centauro");
 let retrolley = document.querySelector(".retrolley");
 
-ios.addEventListener("click", (e) => {
-  if (e.target.tagName !== "A") {
-    window.location =
-      "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a";
-  }
-});
+if (ios) {
+  ios.addEventListener("click", (e) => {
+    if (e.target.tagName !== "A") {
+      window.location =
+        "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a";
+    }
+  });
+}
 
-centauro.addEventListener("click", (e) => {
-  if (e.target.tagName !== "A") {
-    window.location =
-      "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040";
-  }
-});
+if (centauro) {
+  centauro.addEventListener("click", (e) => {
+    if (e.target.tagName !== "A") {
+      window.location =
+        "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040";
+    }
+  });
+}
 
-retrolley.addEventListener("click", (e) => {
-  if (e.target.tagName !== "A") {
-    window.location =
-      "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli";
-  }
-});
+if (retrolley) {
+  retrolley.addEventListener("click", (e) => {
+    if (e.target.tagName !== "A") {
+      window.location =
+        "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli";
+    }
+  });
+}
 
 // const callback = function(entries) {
 //   entries.forEach(entry => {

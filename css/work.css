@@ -13,7 +13,8 @@
 }
 
 h1.article-title {
-  margin: 2rem 0 4rem 0; /* title of project */
+  margin: 2rem 1rem 4rem 1rem; /* title of project */
+  line-height: 100%;
 }
 
 .article-body p {
@@ -74,7 +75,7 @@ header {
   margin: 2rem auto 0 auto;
 }
 
-.light-section.columns {
+.light-section.columns, .project1-section.columns {
   margin: 0 auto !important;
   padding: 4rem 10%;
 }
@@ -123,6 +124,10 @@ article section.dark-section li {
 
 article section.light-section {
   background: var(--gray-lightest);
+  padding-top: 2rem;
+}
+article section.project1-section {
+  background: var(--color-project-1);
   padding-top: 2rem;
 }
 
@@ -216,16 +221,55 @@ h2.page-width {
 .mobile-image-text {
   display: flex;
   justify-content: space-between;
+  margin: 0 !important;
+  padding: 5rem 10% 3rem 10%;
 }
 .mobile-image-text div {
   width: 30%;
+  margin-bottom: 4rem;
 }
 .mobile-image-text div img {
   width: 320px;
 }
 
+.suggestions {
+  margin: 4rem 10% 4rem 10%;
+}
+
+.projects-suggestion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.project-suggestion {
+  border-radius: 1rem;
+  width: 50%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.centauro:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.04), 
+    rgba(0, 0, 0, 0.04)
+  ) var(--color-project-3);
+}
+
+.project-suggestion img {
+  width: 320px;
+}
+
+.link {margin-top: 1rem}
+
 @media only screen and (max-width: 1023px) {
   article .columns {
     display: block;
+  }
+  .mobile-image-text {
+    display: block;
+  }
+  .mobile-image-text div {
+    width: 100%;
   }
 }
