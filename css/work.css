@@ -52,10 +52,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  
   background-color: var(--gray-lightest);
   border-radius: 1rem;
-  margin: 2rem auto 2rem auto;
-  padding: 2rem;
+  margin: 2rem 10% 2rem 10% !important;
+  padding: 2rem !important;
 }
 
 .summary .topic {
@@ -75,7 +76,8 @@ header {
   margin: 2rem auto 0 auto;
 }
 
-.light-section.columns, .project1-section.columns {
+.light-section.columns,
+.project1-section.columns {
   margin: 0 auto !important;
   padding: 4rem 10%;
 }
@@ -98,9 +100,6 @@ header {
   color: var(--gray-dark);
 }
 
-article section .headings {
-  /* width: 28%; */
-}
 
 article section .description {
   /* width: 72%; */
@@ -156,7 +155,6 @@ article section.project1-section {
   max-width: 100%;
   margin: 2rem auto 8rem auto;
 }
-
 
 .hero-background:after {
   content: "";
@@ -227,9 +225,13 @@ h2.page-width {
 .mobile-image-text div {
   width: 30%;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-image-text div img {
-  width: 320px;
+  max-width: 320px;
 }
 
 .suggestions {
@@ -244,25 +246,31 @@ h2.page-width {
 
 .project-suggestion {
   border-radius: 1rem;
-  width: 50%;
+  width: 48%;
   padding: 2rem;
   cursor: pointer;
+  margin: 2rem 0;
 }
 
 .centauro:hover {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.04), 
-    rgba(0, 0, 0, 0.04)
-  ) var(--color-project-3);
+  background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04))
+    var(--color-project-3);
+}
+
+.retrolley:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04))
+    var(--color-project-4);
 }
 
 .project-suggestion img {
   width: 320px;
 }
 
-.link {margin-top: 1rem}
+.link {
+  margin-top: 1rem;
+}
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   article .columns {
     display: block;
   }
@@ -271,5 +279,19 @@ h2.page-width {
   }
   .mobile-image-text div {
     width: 100%;
+  }
+  .projects-suggestion {
+    display: block;
+    
+  }
+  .project-suggestion {
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

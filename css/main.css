@@ -151,8 +151,9 @@ footer .signature {
 }
 
 .retrolley {
-  background-color: #dedede;
+  background-color: var(--color-project-4);
 }
+
 .iphone-video {
   position: relative;
   justify-content: center;
