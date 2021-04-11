@@ -49,7 +49,7 @@ if (ios) {
   ios.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
       window.location =
-        "https://www.notion.so/QuintoAndar-iOS-app-e5ad3352facc4311988bd32263f9b00a";
+        "./work/quintoandar-ios/index.html";
     }
   });
 }
@@ -57,8 +57,7 @@ if (ios) {
 if (centauro) {
   centauro.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
-      window.location =
-        "https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040";
+      window.open("https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040", "_blank");
     }
   });
 }
@@ -66,8 +65,7 @@ if (centauro) {
 if (retrolley) {
   retrolley.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
-      window.location =
-        "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli";
+      window.open("https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli", "_blank");
     }
   });
 }
