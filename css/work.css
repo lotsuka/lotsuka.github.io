@@ -140,7 +140,7 @@ article section.project1-section {
 
 .headings img {
   width: 235px;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 .description img {
@@ -209,6 +209,8 @@ h2.page-width {
 }
 .iphone-video.concept {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .iphone-video.concept video {
   width: 208px;
@@ -227,7 +229,7 @@ h2.page-width {
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .mobile-image-text div img {
