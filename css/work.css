@@ -297,3 +297,8 @@ h2.page-width {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 600px) {
+  .summary {
+    display: block
+  }
+}
