@@ -210,7 +210,7 @@ footer .signature {
   padding: 0 0 0 4rem;
   transform: translateX(200px), scale(1);
   transition: opacity 0.5s ease-out, transform 0.2s ease-out;
-  color: var(--gray-darkest);
+  color: black;
   font-size: 4rem;
   ;
 }
