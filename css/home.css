@@ -56,11 +56,6 @@ h1.logo {
   animation: appear 0.64s ease-in-out;
 } */
 
-footer {
-  grid-column: 2 / 3;
-  padding: 48px 16% 2.5rem 16%;
-  text-align: center;
-}
 
 
 

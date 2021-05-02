@@ -6,6 +6,7 @@
 
 .menu {
   padding: 0 1.5rem;
+  height: 64px !important;
 }
 
 .menu h2 {
@@ -29,6 +30,10 @@ h1.article-title {
 
 header {
   background-color: var(--main-bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .hero-background {
@@ -252,8 +257,17 @@ h2.page-width {
   padding: 2rem;
   cursor: pointer;
   margin: 2rem 0;
+  overflow: hidden;
+  position: relative;
 }
 
+.hover {
+  right: 0px !important;
+}
+.project:hover .hover {
+  transform: translateX(440px) scale(1.25) !important;
+}
+/* 
 .centauro:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04))
     var(--color-project-3);
@@ -262,10 +276,10 @@ h2.page-width {
 .retrolley:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04))
     var(--color-project-4);
-}
+} */
 
 .project-suggestion img {
-  width: 320px;
+  width: 100%;
 }
 
 .link {
