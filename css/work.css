@@ -36,6 +36,15 @@ header {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.project1,
+.hero-background.after-project1::after {
+  background: var(--color-project-1);
+}
+.project3,
+.hero-background.after-project3::after {
+  background: var(--color-project-3);
+}
+
 .hero-background {
   padding: 4% 0 0 0;
   position: relative;
@@ -57,7 +66,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
+
   background-color: var(--gray-lightest);
   border-radius: 1rem;
   margin: 2rem 10% 2rem 10% !important;
@@ -82,7 +91,7 @@ header {
 }
 
 .light-section.columns,
-.project1-section.columns {
+.project-section.columns {
   margin: 0 auto !important;
   padding: 4rem 10%;
 }
@@ -104,7 +113,6 @@ header {
 .columns ol li::marker {
   color: var(--gray-dark);
 }
-
 
 article section .description {
   /* width: 72%; */
@@ -130,8 +138,8 @@ article section.light-section {
   background: var(--gray-lightest);
   padding-top: 2rem;
 }
-article section.project1-section {
-  background: var(--color-project-1);
+article section.project-section,
+article section.project2-section {
   padding-top: 2rem;
 }
 
@@ -161,12 +169,11 @@ article section.project1-section {
   margin: 2rem auto 8rem auto;
 }
 
-.hero-background:after {
+.hero-background::after {
   content: "";
   position: absolute;
   top: 0;
   height: 64%;
-  background-color: var(--color-project-1);
   z-index: 0;
   width: 100vw;
 }
@@ -181,20 +188,17 @@ h2.page-width {
 }
 
 .challenge {
-  background: #e6f4f1;
+  /* background: #e6f4f1; */
   border-radius: 16px;
   padding: 1rem;
   margin: 2rem 0;
   color: var(--gray-darker);
+  filter: brightness(112%) saturate(56%);
 }
 
 .project-hero-image img {
   width: 100%;
   display: block;
-}
-
-.project-hero-image {
-  background-color: var(--color-project-1);
 }
 
 .iphone-8-frame {
@@ -298,12 +302,10 @@ h2.page-width {
   }
   .projects-suggestion {
     display: block;
-    
   }
   .project-suggestion {
     width: 100%;
   }
-  
 }
 @media screen and (max-width: 1200px) {
   .summary {
@@ -313,6 +315,6 @@ h2.page-width {
 }
 @media screen and (max-width: 600px) {
   .summary {
-    display: block
+    display: block;
   }
 }
