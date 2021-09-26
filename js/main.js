@@ -48,8 +48,7 @@ let retrolley = document.querySelector(".retrolley");
 if (ios) {
   ios.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
-      window.location =
-        "./work/quintoandar-ios/index.html";
+      window.location = "./work/quintoandar-ios/index.html";
     }
   });
 }
@@ -57,7 +56,10 @@ if (ios) {
 if (centauro) {
   centauro.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
-      window.open("https://www.notion.so/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040", "_blank");
+      window.open(
+        "https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040",
+        "_blank"
+      );
     }
   });
 }
@@ -65,7 +67,10 @@ if (centauro) {
 if (retrolley) {
   retrolley.addEventListener("click", (e) => {
     if (e.target.tagName !== "A") {
-      window.open("https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli", "_blank");
+      window.open(
+        "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli",
+        "_blank"
+      );
     }
   });
 }
