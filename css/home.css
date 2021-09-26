@@ -32,20 +32,18 @@ h1.logo {
 
 .highlights a.underline::before {
   background-color: var(--color-primary-light);
-
 }
 
 .highlights a.underline:hover::before {
   background-color: var(--color-primary);
 }
 
-
 .main {
   grid-column: 2 / 3;
 }
 
 .project {
-  padding: 48px 16% 2.5rem 16%;
+  padding: 48px 16% 1rem 16%;
   /*height: 90vh; */
   position: relative;
   overflow: hidden;
@@ -56,15 +54,11 @@ h1.logo {
   animation: appear 0.64s ease-in-out;
 } */
 
-
-
-
 .project p a {
   /* border-bottom: 1px solid var(--gray-medium); */
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-
 
 .project img {
   height: 480px;
@@ -79,14 +73,12 @@ h1.logo {
   border-radius: 8px;
 }
 
-
-
 /* for making projects appear as users scrolls */
 .show-on-scroll {
   opacity: 0;
   transform: translateX(200px);
-  transition: opacity 0.4s 0.25s
-    ease-out, transform 2s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity 0.4s 0.25s ease-out,
+    transform 2s 0.25s cubic-bezier(0, 1, 0.3, 1);
   will-change: transform, opacity;
 }
 
@@ -94,17 +86,6 @@ h1.logo {
   opacity: 1;
   transform: translateX(0px);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Phones */
 
@@ -154,9 +135,7 @@ h1.logo {
 
 /* iPads portrait  */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    .header {
-        padding: 3rem 2rem;
-      }
-    }
-
-
+  .header {
+    padding: 3rem 2rem;
+  }
+}
