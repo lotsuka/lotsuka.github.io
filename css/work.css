@@ -318,3 +318,13 @@ h2.page-width {
     display: block;
   }
 }
+
+#progress-bar {
+  --scrollAmount: 0%;
+  background: var(--gray-darkest);
+  width: var(--scrollAmount);
+  height: 0.25rem;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+}
