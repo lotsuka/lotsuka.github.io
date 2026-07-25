@@ -40,6 +40,12 @@ header {
 .hero-background.after-project1::after {
   background: var(--color-project-1);
 }
+
+.project2,
+.hero-background.after-project2::after {
+  background: var(--color-project-2);
+}
+
 .project3,
 .hero-background.after-project3::after {
   background: var(--color-project-3);
@@ -77,7 +83,7 @@ header {
   /*max-width: 220px; */
   margin: 1rem 0.5rem;
   flex: 1 1 13rem;
-  color: var(--gray-darker);
+  color: var(--gray-darkest);
 }
 .summary .topic:last-child {
   margin-right: none;
@@ -118,11 +124,12 @@ article section .description {
   /* width: 72%; */
   font-size: 1.25rem;
   line-height: 150%;
-  color: var(--gray-darker);
+  color: var(--gray-darkest);
 }
 
 .description .quote {
   font-weight: 800;
+  color: var(--gray-darkest);
 }
 
 article section.dark-section {
@@ -192,8 +199,16 @@ h2.page-width {
   border-radius: 16px;
   padding: 1rem;
   margin: 2rem 0;
-  color: var(--gray-darker);
+  color: var(--gray-darkest);
+  font-weight: 600;
+}
+
+.challenge.project1 {
   filter: brightness(112%) saturate(56%);
+}
+
+.challenge.project2 {
+  filter: brightness(105%) saturate(60%);
 }
 
 .project-hero-image img {

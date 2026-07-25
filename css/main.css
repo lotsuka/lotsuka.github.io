@@ -8,6 +8,102 @@
   src: url("Gilroy-ExtraBold.otf");
 }
 
+/* Accessibility: Skip Link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  background: var(--gray-darkest);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: -1;
+  border-radius: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* Accessibility: Visually Hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Accessibility: Focus Indicators */
+*:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .show-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  
+  .hover {
+    transition: none !important;
+  }
+  
+  a.underline::before {
+    transition: none !important;
+  }
+}
+
+/* Accessibility utility classes */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .container {
   width: 100%;
   position: relative;
@@ -58,6 +154,11 @@ a.button:hover {
   box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
 
+a.button:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 a.button span {
   margin-right: 1rem;
   display: flex;
@@ -82,9 +183,16 @@ ul.social {
 a.social_button {
   border-bottom: 1px solid transparent;
 }
+
 a.social_button:hover span {
   background: var(--gray-lighter);
   transition: all 0.4s ease-in-out;
+}
+
+a.social_button:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 50%;
 }
 
 a {
@@ -194,6 +302,16 @@ footer .signature {
   transform: translateX(100px) scale(1.25);
 }
 
+.project:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.project:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
 .hover {
   display: flex;
   opacity: 0;
@@ -221,4 +339,35 @@ footer {
   padding: 48px 16% 2.5rem 16%;
   text-align: center;
   font-family: "DM Sans", sans-serif;
+}
+
+
+/* Accessibility: Touch Targets */
+@media (max-width: 1023px) {
+  a, button, .project {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .social li span {
+    width: 48px;
+    height: 48px;
+  }
+  
+  a.button {
+    padding: 16px 24px;
+    min-height: 48px;
+  }
+}
+
+/* Accessibility: Zoom Support */
+@media (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }

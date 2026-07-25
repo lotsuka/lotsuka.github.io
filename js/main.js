@@ -1,3 +1,6 @@
+// Detect motion preference
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const scroll =
   window.requestAnimationFrame ||
   function (callback) {
@@ -11,15 +14,28 @@ function loop() {
 
   elementsToShow.forEach(function (element, index) {
     if (isElementInViewport(element)) {
-      setTimeout(function () {
+      // Respect reduced motion preference
+      if (prefersReducedMotion) {
         element.classList.add("is-visible");
-      }, Math.min(index, 1) * 100 + 100);
+      } else {
+        setTimeout(function () {
+          element.classList.add("is-visible");
+        }, Math.min(index, 1) * 100 + 100);
+      }
     }
   });
   scroll(loop);
 }
 
-loop();
+// Only run animation loop if motion is not reduced
+if (!prefersReducedMotion) {
+  loop();
+} else {
+  // Immediately show all content if motion is reduced
+  elementsToShow.forEach(function (element) {
+    element.classList.add("is-visible");
+  });
+}
 
 function isElementInViewport(el) {
   // special bonus for those using jQuery
@@ -39,39 +55,71 @@ function isElementInViewport(el) {
   );
 }
 
-// Making entire projects div clickable
+// Making entire projects div clickable and keyboard accessible
 
 let ios = document.querySelector(".ios");
+let designsystem = document.querySelector(".designsystem");
 let centauro = document.querySelector(".centauro");
 let retrolley = document.querySelector(".retrolley");
 
+// Helper function to handle project navigation
+function handleProjectClick(e, url, isExternal) {
+  if (e.target.tagName !== "A") {
+    if (isExternal) {
+      window.open(url, "_blank");
+    } else {
+      window.location = url;
+    }
+  }
+}
+
+// Helper function to handle keyboard navigation
+function handleProjectKeydown(e, url, isExternal) {
+  if (e.key === "Enter" || e.key === " ") {
+    if (e.target.classList.contains("project")) {
+      e.preventDefault();
+      if (isExternal) {
+        window.open(url, "_blank");
+      } else {
+        window.location = url;
+      }
+    }
+  }
+}
+
 if (ios) {
   ios.addEventListener("click", (e) => {
-    if (e.target.tagName !== "A") {
-      window.location = "./work/quintoandar-ios/index.html";
-    }
+    handleProjectClick(e, "./work/quintoandar-ios/index.html", false);
+  });
+  ios.addEventListener("keydown", (e) => {
+    handleProjectKeydown(e, "./work/quintoandar-ios/index.html", false);
+  });
+}
+
+if (designsystem) {
+  designsystem.addEventListener("click", (e) => {
+    handleProjectClick(e, "https://rural-car-067.notion.site/Building-inclusive-Design-Systems-cde58bbadf1c40e3aae09d1c0420bda7", true);
+  });
+  designsystem.addEventListener("keydown", (e) => {
+    handleProjectKeydown(e, "https://rural-car-067.notion.site/Building-inclusive-Design-Systems-cde58bbadf1c40e3aae09d1c0420bda7", true);
   });
 }
 
 if (centauro) {
   centauro.addEventListener("click", (e) => {
-    if (e.target.tagName !== "A") {
-      window.open(
-        "https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040",
-        "_blank"
-      );
-    }
+    handleProjectClick(e, "https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040", true);
+  });
+  centauro.addEventListener("keydown", (e) => {
+    handleProjectKeydown(e, "https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040", true);
   });
 }
 
 if (retrolley) {
   retrolley.addEventListener("click", (e) => {
-    if (e.target.tagName !== "A") {
-      window.open(
-        "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli",
-        "_blank"
-      );
-    }
+    handleProjectClick(e, "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli", true);
+  });
+  retrolley.addEventListener("keydown", (e) => {
+    handleProjectKeydown(e, "https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli", true);
   });
 }
 
@@ -120,3 +168,34 @@ project.forEach(element => {
     }) 
 
 }) */
+
+
+// Screen reader announcements
+function announceToScreenReader(message) {
+  const announcer = document.getElementById('sr-announcements');
+  if (announcer) {
+    announcer.textContent = message;
+    // Clear after announcement
+    setTimeout(() => {
+      announcer.textContent = '';
+    }, 1000);
+  }
+}
+
+// Announce when projects become visible
+const projectObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('announced')) {
+      const projectTitle = entry.target.querySelector('h2');
+      if (projectTitle) {
+        announceToScreenReader(`${projectTitle.textContent} project is now visible`);
+        entry.target.classList.add('announced');
+      }
+    }
+  });
+}, { threshold: 0.5 });
+
+// Observe all project cards
+document.querySelectorAll('.project').forEach(project => {
+  projectObserver.observe(project);
+});

@@ -48,9 +48,15 @@
   </head>
 
   <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Screen reader announcements -->
+    <div aria-live="polite" aria-atomic="true" class="visually-hidden" id="sr-announcements"></div>
+    
     <div class="container">
-      <div class="header">
-        <header role="heading">
+      <header class="header" role="banner">
+        <div class="header-content">
           <h1 class="logo">Lucas Otsuka</h1>
 
           <div class="panel-content">
@@ -62,6 +68,7 @@
                     href="https://health.amazon.com/"
                     target="_blank"
                     class="underline"
+                    aria-label="Amazon Health Services (opens in new tab)"
                     >Amazon Health Services</a>
                 </p>
                 <p class="subheading">
@@ -70,6 +77,7 @@
                     href="https://mentorama.com.br/course/figma"
                     target="_blank"
                     class="underline"
+                    aria-label="Mentorama (opens in new tab)"
                     >Mentorama</a
                   >
                 </p>
@@ -79,6 +87,7 @@
                     href="https://interaction-design.org/"
                     target="_blank"
                     class="underline"
+                    aria-label="IDF (opens in new tab)"
                     >IDF</a
                   >
                   and
@@ -86,6 +95,7 @@
                     href="https://trydesignlab.com/"
                     target="_blank"
                     class="underline"
+                    aria-label="DesignLab (opens in new tab)"
                     >DesignLab</a
                   >
                 </p>
@@ -113,6 +123,7 @@
                       href="https://linkedin.com/in/LucasOtsuka"
                       title="LinkedIn"
                       target="_blank"
+                      aria-label="LinkedIn profile (opens in new tab)"
                     >
                       <span>
                         <svg
@@ -130,7 +141,30 @@
                       </span>
                     </a>
                   </li>
-                  
+                  <li>
+                    <a
+                      class="social_button"
+                      href="https://medium.com/@lucasotsuka"
+                      title="Medium"
+                      target="_blank"
+                      aria-label="Medium profile (opens in new tab)"
+                    >
+                      <span>
+                        <svg
+                          width="21"
+                          height="18"
+                          viewBox="0 0 21 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.46211 3.67031C2.48789 3.39375 2.38906 3.11719 2.2 2.92969L0.262109 0.379687V0H6.28633L10.9441 11.1422L15.0391 0H20.784V0.379687L19.1254 2.11406C18.9836 2.23125 18.9105 2.42812 18.9406 2.62031V15.3703C18.9105 15.5625 18.9836 15.7594 19.1254 15.8766L20.7453 17.6109V17.9906H12.5941V17.6109L14.2742 15.8344C14.4375 15.6562 14.4375 15.6 14.4375 15.3281V5.025L9.7668 17.9578H9.13516L3.70391 5.025V13.6922C3.65664 14.0578 3.76836 14.4234 4.00469 14.6859L6.1875 17.5734V17.9531H0V17.5781L2.18281 14.6859C2.41484 14.4234 2.52227 14.0531 2.46211 13.6922V3.67031Z"
+                            fill="#7C97AC"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
                 </ul>
 
                 <a
@@ -159,22 +193,21 @@
               </div>
             </div>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
 
       <!-- Main content -->
-
-      <div class="main">
-        <main role="main">
-          <div class="projects">
+      <main class="main" id="main-content" role="main">
+        <section class="projects" aria-labelledby="projects-heading">
+          <h2 id="projects-heading" class="visually-hidden">Portfolio Projects</h2>
             <!-- IOS -->
-            <div class="project ios" tabindex="0">
+            <article class="project ios" tabindex="0">
               <div class="project-content show-on-scroll">
                 <a
                   href="./work/quintoandar-ios/index.html"
-                  aria-label="Read QuintoAndar iOS case study on Medium"
+                  aria-label="Read QuintoAndar iOS case study"
                 >
-                  <h3 class="display">QuintoAndar iOS app</h3>
+                  <h2 class="display">QuintoAndar iOS app</h2>
                   <!-- <p class="period"> Jan 2019 – Jul 2019</p>-->
                   <p class="body">
                     How might we help people find their dream home quickier?
@@ -206,18 +239,17 @@
 
               <!-- Just for hovering -->
               <div class="hover">→</div>
-            </div>
+            </article>
 
             <!-- Design System-->
 
-            <div class="project designsystem" tabindex="0">
+            <article class="project designsystem" tabindex="0">
               <div class="project-content show-on-scroll">
                 <a
-                  href="https://rural-car-067.notion.site/Building-inclusive-Design-Systems-cde58bbadf1c40e3aae09d1c0420bda7"
-                  aria-label="Read Cozy case study on Notion"
-                  target="_blank"
+                  href="./work/design-system/index.html"
+                  aria-label="Read Cozy Design System case study"
                 >
-                  <h3 class="display">Cozy Design System</h3>
+                  <h2 class="display">Cozy Design System</h2>
                   <!-- <p class="period"> Jan 2019 – Jul 2019</p>-->
                   <p class="body">
                     How might we empower QuintoAndar's teams to think
@@ -232,19 +264,17 @@
                 </ul> -->
                 <p>
                   <a
-                    href="https://rural-car-067.notion.site/Building-inclusive-Design-Systems-cde58bbadf1c40e3aae09d1c0420bda7"
-                    aria-label="Read Cozy case study on Notion"
-                    target="_blank"
+                    href="./work/design-system/index.html"
+                    aria-label="Read Cozy Design System case study"
                     class="underline"
                   >
-                    Read case study on Notion →</a
+                    Read case study →</a
                   >
                 </p>
                 <div class="hero_image">
                   <a
-                    href="https://rural-car-067.notion.site/Building-inclusive-Design-Systems-cde58bbadf1c40e3aae09d1c0420bda7"
-                    aria-label="Read Cozy case study on Notion"
-                    target="_blank"
+                    href="./work/design-system/index.html"
+                    aria-label="Read Cozy Design System case study"
                     ><img src="./img/hero_cozy.png" alt="Cozy website showing guidelines for the button component"
                   /></a>
                 </div>
@@ -252,18 +282,18 @@
 
               <!-- Just for hovering -->
               <div class="hover">→</div>
-            </div>
+            </article>
 
-            <div class="project centauro" tabindex="0">
+            <article class="project centauro" tabindex="0">
               <div class="project-content show-on-scroll">
                 <a
                   href="https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040"
                   target="_blank"
-                  aria-label="Read Centauro case study on Notion"
+                  aria-label="Read Centauro case study on Notion (opens in new tab)"
                 >
-                  <h3 class="display" class="underline">
+                  <h2 class="display" class="underline">
                     Centauro mobile site
-                  </h3>
+                  </h2>
                   <!-- <p class="period"> Nov 2017 – Jan 2018</p> -->
                   <p class="body">
                     How might we provide users an omnichannel experience?
@@ -283,7 +313,7 @@
                   <a
                     href="https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040"
                     target="_blank"
-                    aria-label="Read Centauro case study on Notion"
+                    aria-label="Read Centauro case study on Notion (opens in new tab)"
                     class="underline"
                     >Read case study on Notion →</a
                   >
@@ -292,7 +322,7 @@
                   <a
                     href="https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040"
                     target="_blank"
-                    aria-label="Read Centauro case study on Notion"
+                    aria-label="Read Centauro case study on Notion (opens in new tab)"
                   >
                     <img
                       src="./img/home_hero_centauro.png"
@@ -304,16 +334,16 @@
 
               <!-- Just for hovering -->
               <div class="hover">→</div>
-            </div>
+            </article>
 
-            <div class="project retrolley" tabindex="0">
+            <article class="project retrolley" tabindex="0">
               <div class="project-content show-on-scroll">
                 <a
                   href="https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli"
                   target="_blank"
-                  aria-label="Read Retrolley case study on Issuu"
+                  aria-label="Read Retrolley case study on Issuu (opens in new tab)"
                 >
-                  <h3 class="display">Airbus Retrolley</h3>
+                  <h2 class="display">Airbus Retrolley</h2>
 
                   <!-- <p class="period"> Nov 2017 – Jan 2018</p> -->
                   <p class="body">How might we recycle airline waste?</p>
@@ -332,7 +362,7 @@
                   <a
                     href="https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli"
                     target="_blank"
-                    aria-label="Read Retrolley case study on Issuu"
+                    aria-label="Read Retrolley case study on Issuu (opens in new tab)"
                     class="underline"
                     >Read case study on Issu →</a
                   >
@@ -341,7 +371,7 @@
                   <a
                     href="https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli"
                     target="_blank"
-                    aria-label="Read Retrolley case study on Issuu"
+                    aria-label="Read Retrolley case study on Issuu (opens in new tab)"
                   >
                     <img
                       src="./img/retrolley.png"
@@ -353,11 +383,11 @@
 
               <!-- Just for hovering -->
               <div class="hover">→</div>
-            </div>
-          </div>
+            </article>
+          </section>
         </main>
 
-        <footer>
+        <footer role="contentinfo">
           <div class="signature">
             <p>© Coded with ♥️ by Lucas Otsuka • 2021</p>
           </div>
@@ -365,5 +395,13 @@
       </div>
     </div>
     <script src="./js/main.js" type="text/javascript"></script>
+    <noscript>
+      <style>
+        .show-on-scroll {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
