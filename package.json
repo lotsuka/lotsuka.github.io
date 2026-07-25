@@ -1,0 +1,31 @@
+{
+  "name": "lucas-otsuka-portfolio",
+  "version": "1.0.0",
+  "description": "Lucas Otsuka's Portfolio Website",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:accessibility": "jest --testPathPattern=accessibility",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.2",
+    "@playwright/test": "^1.40.0",
+    "axe-core": "^4.8.2",
+    "fast-check": "^3.15.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "playwright": "^1.40.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js"
+    ]
+  }
+}
