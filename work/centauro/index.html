@@ -22,16 +22,18 @@
   </head>
 
   <body>
+    <a href="#main-article" class="skip-link">Skip to main content</a>
+    <div aria-live="polite" aria-atomic="true" class="visually-hidden" id="sr-announcements"></div>
     <main class="container">
       <header>
         <div class="menu">
-          <a href="../../index.html" title="Lucas Otsuka - go to Home page">
+          <a href="../../index.html" aria-label="Lucas Otsuka - go to Home page">
             <h2 class="logo">Lucas Otsuka</h2>
           </a>
         </div>
       </header>
 
-      <article>
+      <article id="main-article" tabindex="-1">
         <div class="hero-background after-project3">
           <h1 class="article-title">Centauro mobile site</h1>
 
@@ -46,9 +48,9 @@
                 Sorry, your browser doesn't support embedded videos.
               </video> -->
 
-              <img src="../../img/iphone_frame.png" alt="iPhone frame" />
+              <img src="../../img/iphone_frame.png" alt="" aria-hidden="true" />
 
-              <video width="180" poster="../../img/hero_ios.png" muted loop preload="true" autoplay playsinline tabindex="0">
+              <video width="180" poster="../../img/hero_ios.png" muted loop preload="true" autoplay playsinline aria-hidden="true">
                 <source src="../../img/ios/consolidado.mp4#t=0.001" type="video/mp4" />
 
                 Sorry, your browser doesn't support embedded videos.
@@ -59,20 +61,20 @@
 
         <div class="summary caption">
           <div class="topic">
-            <h3>Overview</h3>
+            <h2>Overview</h2>
             <p>
               Centauro is a long-standing leader in the sports gear market with hundreds of stores in Brazil. We've redesigned and transformed its mobile site to a PWA site (Progressive Web App).
             </p>
           </div>
 
           <div class="topic">
-            <h3>My role</h3>
+            <h2>My role</h2>
             <p>
               Centauro is a long-standing leader in the sports gear market with hundreds of stores in Brazil. We've redesigned and transformed its mobile site to a PWA site (Progressive Web App).
             </p>
           </div>
           <div class="topic">
-            <h3>Goals</h3>
+            <h2>Goals</h2>
             <ul>
               <li>Increase online sales from mobile site</li>
               <li>Leverage an Omnichannel experience</li>
@@ -80,7 +82,7 @@
           </div>
 
           <div class="topic">
-            <h3>Outcomes</h3>
+            <h2>Outcomes</h2>
             <ul>
               <li>Improved site navigation</li>
             </ul>
@@ -91,7 +93,7 @@
           <picture>
             <img
               src="../../img/ios/Image/Hero/Centauro@2x.png"
-              alt="Project hero image"
+              alt="Centauro mobile site design showing the new home page layout"
             />
           </picture>
         </div>
@@ -196,9 +198,9 @@
               
 
               <div class="iphone-video concept">
-                <img src="../../img/iphone_frame.png" alt="iPhone frame" />
+                <img src="../../img/iphone_frame.png" alt="" aria-hidden="true" />
   
-                <video width="220" poster="../../img/hero_ios.png" muted loop preload="true" autoplay playsinline tabindex="0">
+                <video width="220" poster="../../img/hero_ios.png" muted loop preload="true" autoplay playsinline aria-hidden="true">
                   <source src="../../img/ios/consolidado.mp4#t=0.001" type="video/mp4" />
   
                   Sorry, your browser doesn't support embedded videos.
@@ -257,7 +259,7 @@
 
         <section class="page-width columns">
           <div class="headings">
-            <h6>2nd round</h6>
+            <p class="round-label" aria-hidden="true">2nd round</p>
             <h2>Filters</h2>
           </div>
 
@@ -279,12 +281,12 @@
 
         <section class="page-width mobile-image-text">
           <div>
-            <img src="../../img/ios/filters_ios.png" alt="filters" />
+            <img src="../../img/ios/filters_ios.png" alt="Rent price filter UI showing price range input and distinction between rent and full price" />
             <p>We've enhanced the distinction between rent prices and the full price and allow users to type the price range (not only for accessibility matter but also because users struggled to correctly set the price they wanted)</p>
           </div>
           
           <div>
-            <img src="../../img/ios/filters_map_ios.png" alt="filters" />
+            <img src="../../img/ios/filters_map_ios.png" alt="Map view showing applied filters and no-results message" />
             <p>People got no results when using several filters at once, but there wasn't enough feedback that the filters were applied so they kept waiting for the properties to load on the map. Thus, we've added a  message saying no results were found and inviting the user to try other filters</p>
           </div>
 
@@ -297,7 +299,7 @@
 
         <section class="light-section page-width columns">
           <div class="headings">
-            <h6>3rd round</h6>
+            <p class="round-label" aria-hidden="true">3rd round</p>
             <h2>Email alerts</h2>
           </div>
 
@@ -363,7 +365,7 @@
               <li>We've properly described buttons on the app</li>
             </ul>
 
-            <video width="100%" poster="../../img/accessibility_video_placeholder.png" controls >
+            <video width="100%" poster="../../img/accessibility_video_placeholder.png" controls aria-label="VoiceOver accessibility demo showing screen reader usage on QuintoAndar iOS app">
               <source src="../../img/ios/accessibility_voice_over.mp4" type="video/mp4" />
 
               Sorry, your browser doesn't support embedded videos.
@@ -401,16 +403,16 @@
           <p class="body">How might we help people find their dream home quickier?</p>
           <p class="caption">Sep - Dec 2017</p>
           <p class="link"><a href="https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040" target="_blank"
-            aria-label="Read Centauro case study on Notion" class="underline">Read case study on Notion →</a></p>
+            aria-label="Read Centauro case study on Notion (opens in new tab)" class="underline">Read case study on Notion →</a></p>
             
           <div class="hero_image">
             <a href="https://rural-car-067.notion.site/Centauro-mobile-site-d432dc878ed3437993fadbeadd4cc040" target="_blank"
-              aria-label="Read QuintoAndar case study on Notion">
-              <img src="../../img/home_hero_centauro.png" alt="QuintoAndar mobile site home page image">
+              aria-label="Read Centauro case study on Notion (opens in new tab)">
+              <img src="../../img/home_hero_centauro.png" alt="Phone showing Centauro mobile site home page">
             </a>
           </div>
           <!-- Just for hovering -->
-          <div class="hover"> → </div>
+          <div class="hover" aria-hidden="true">→</div>
         </div>
 
         <div class="project project-suggestion retrolley">
@@ -418,18 +420,18 @@
           <p class="body">How might we recycle airline waste?</p>
           <p class="caption">Nov 2017 – Jan 2018</p>
           <p class="link"><a href="https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli" target="_blank"
-            aria-label="Read Retrolley case study on Issuu" class="underline">Read case
+            aria-label="Read Retrolley case study on Issuu (opens in new tab)" class="underline">Read case
             study on Issu →</a></p>
 
           <div class="hero_image">
             <a href="https://issuu.com/lucasmarquesotsuka/docs/airbus_retrolley_lucas_otsuka_engli" target="_blank"
-              aria-label="Read Retrolley case study on Issuu">
-              <img src="../../img/retrolley.png" alt="Centauro mobile site home page image">
+              aria-label="Read Retrolley case study on Issuu (opens in new tab)">
+              <img src="../../img/retrolley.png" alt="Two Retrolleys, one with the lid open and the other closed">
 
             </a>
           </div>
           <!-- Just for hovering -->
-          <div class="hover"> → </div>
+          <div class="hover" aria-hidden="true">→</div>
         </div>
       </div>
       </div>

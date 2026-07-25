@@ -9,6 +9,10 @@ let progressScroll = () => {
   document
     .getElementById("progress-bar")
     .style.setProperty("--scrollAmount", scrollPercent);
+
+  document
+    .getElementById("progress-bar")
+    .setAttribute('aria-valuenow', Math.round(scrollTop / scrollBottom * 100));
 };
 
 document.addEventListener("scroll", progressScroll);

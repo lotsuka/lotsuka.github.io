@@ -343,3 +343,13 @@ h2.page-width {
   top: 4rem;
   left: 0;
 }
+
+/* Round label (replaces h6 for accessibility) */
+.round-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-dark);
+  margin-bottom: 0.25rem;
+}
