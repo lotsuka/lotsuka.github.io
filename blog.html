@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes on accessibility, inclusive design, design systems, and product design by Lucas Otsuka.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="theme-color" content="#f4f1e9">
+    <link href="./img/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="./blog/css/blog.css">
+    <title>Writing — Lucas Otsuka</title>
+  </head>
+
+  <body id="top">
+    <a class="skip-link" href="#article">Skip to the article</a>
+
+    <div class="preview-note" role="status">
+      <span aria-hidden="true"></span>
+      Private preview. Not published.
+    </div>
+
+    <header class="site-header wrap">
+      <a class="wordmark" href="./" aria-label="Lucas Otsuka portfolio">Lucas Otsuka</a>
+      <p>Writing on design and access</p>
+      <a class="portfolio-link" href="./">Portfolio <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <header class="publication-intro wrap">
+        <p class="edition">Volume 01 · 2026</p>
+        <h1>Notes on designing<br>for <em>people.</em></h1>
+        <p class="intro-copy">I write about accessibility, design systems, and what I learn while making digital products.</p>
+      </header>
+
+      <article id="article" aria-labelledby="article-title">
+        <header class="article-hero wrap">
+          <div class="article-details" role="group" aria-label="Article details">
+            <p>Accessibility</p>
+            <time datetime="2026-07-29">July 29, 2026</time>
+            <p>8 minute read</p>
+          </div>
+
+          <div class="article-heading">
+            <p class="essay-number" aria-hidden="true">01</p>
+            <h2 id="article-title">5 accessibility mistakes designers can catch <span>before handoff</span></h2>
+            <p>Design decisions become product constraints. Here are five common failures we can prevent before a single line of code is written.</p>
+          </div>
+        </header>
+
+        <div class="article-layout wrap">
+          <aside class="reading-rail" aria-label="On this page">
+            <p>On this page</p>
+            <ol>
+              <li><a href="#contrast">Low-contrast text</a></li>
+              <li><a href="#alt-text">Alternative text</a></li>
+              <li><a href="#links">Empty links</a></li>
+              <li><a href="#buttons">Empty buttons</a></li>
+              <li><a href="#labels">Form labels</a></li>
+            </ol>
+          </aside>
+
+          <div class="article-flow">
+            <div class="article-lede">
+              <p>Every year, WebAIM reviews the home pages of the top one million websites. And every year, the same accessibility problems keep showing up.</p>
+              <p>Designers can stop many of them early. The choices we make in Figma set the foundation for accessibility—or create accessibility debt.</p>
+            </div>
+
+            <section class="essay-section" id="contrast" aria-labelledby="contrast-title">
+              <p class="section-number" aria-hidden="true">01</p>
+              <h3 id="contrast-title">Low-contrast text</h3>
+              <p>Low contrast remains the most common accessibility issue on the web. It affects labels, secondary text, placeholders, disabled states, icons, and everything else a team decides is “less important.”</p>
+
+              <figure class="contrast-study">
+                <figcaption>Contrast is information, not decoration.</figcaption>
+                <div class="contrast-sample contrast-fail">
+                  <span>Hard to read</span>
+                  <strong>2.6:1 · Fails</strong>
+                </div>
+                <div class="contrast-sample contrast-pass">
+                  <span>Clear to read</span>
+                  <strong>15.7:1 · Passes AAA</strong>
+                </div>
+              </figure>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Check text and icons against every background they use.</li>
+                  <li>Specify approved color tokens, not loose values.</li>
+                  <li>Test the least prominent state—not only the default.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="essay-section" id="alt-text" aria-labelledby="alt-title">
+              <p class="section-number" aria-hidden="true">02</p>
+              <h3 id="alt-title">Missing alternative text</h3>
+              <p>Developers add the attribute, but designers usually understand what an image is meant to communicate. That intent belongs in the design specification.</p>
+
+              <figure class="alt-study">
+                <figcaption>A useful description communicates purpose, not every pixel.</figcaption>
+                <div class="alt-visual" role="img" aria-label="Four designers reviewing a prototype beside an airplane trolley">
+                  <span>Prototype review</span>
+                </div>
+                <p><strong>Alt:</strong> Four designers review a prototype beside an airplane trolley.</p>
+              </figure>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Mark decorative images clearly so assistive technology can skip them.</li>
+                  <li>Write suggested alt text for images that carry meaning.</li>
+                  <li>Keep essential information out of images whenever possible.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="essay-section" id="links" aria-labelledby="links-title">
+              <p class="section-number" aria-hidden="true">03</p>
+              <h3 id="links-title">Empty links</h3>
+              <p>An icon may look familiar and still be meaningless to someone using a screen reader. A link needs a name that describes where it goes.</p>
+
+              <div class="label-study" role="group" aria-label="Accessible link example">
+                <p>Visible interface</p>
+                <a href="https://linkedin.com/in/LucasOtsuka" aria-label="Lucas Otsuka on LinkedIn">in</a>
+                <p>Accessible name</p>
+                <code>Lucas Otsuka on LinkedIn</code>
+              </div>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Include the accessible name for every icon-only link.</li>
+                  <li>Describe the destination, not the icon’s appearance.</li>
+                  <li>Make linked areas large enough to use without precision.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="essay-section" id="buttons" aria-labelledby="buttons-title">
+              <p class="section-number" aria-hidden="true">04</p>
+              <h3 id="buttons-title">Empty buttons</h3>
+              <p>Buttons have the same naming requirement as links, but their label should describe an action: Search, close dialog, open menu, or download report.</p>
+
+              <div class="control-study">
+                <button type="button" aria-label="Close dialog"><span aria-hidden="true">×</span></button>
+                <div>
+                  <p>Visible control: ×</p>
+                  <p>Accessible name: <strong>Close dialog</strong></p>
+                </div>
+              </div>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Label every icon button in the design file.</li>
+                  <li>Use verbs that describe the outcome.</li>
+                  <li>Design clear hover, focus, pressed, and disabled states.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="essay-section" id="labels" aria-labelledby="labels-title">
+              <p class="section-number" aria-hidden="true">05</p>
+              <h3 id="labels-title">Missing form labels</h3>
+              <p>A placeholder is an example, not a label. It disappears as soon as someone types, forcing people to remember what the field asked for.</p>
+
+              <div class="form-study">
+                <label for="email-example">Email address</label>
+                <input id="email-example" type="email" placeholder="name@example.com" autocomplete="email">
+                <p>The label remains after typing begins.</p>
+              </div>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Give every field a persistent, visible label.</li>
+                  <li>Write errors that explain what happened and how to fix it.</li>
+                  <li>Group related fields with a meaningful heading.</li>
+                </ul>
+              </div>
+            </section>
+
+            <footer class="article-conclusion">
+              <p>Accessibility starts in design.</p>
+              <h3>Check contrast. Label icons. Describe images. Design forms that make sense.</h3>
+              <p>That’s how accessibility gets built in instead of patched on later.</p>
+            </footer>
+
+            <div class="byline">
+              <p>Written by <strong>Lucas Otsuka</strong>, a Senior UX Designer specializing in accessibility, inclusive design, and design systems.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="article-02" aria-labelledby="article-title-02">
+        <header class="article-hero article-hero--semantic wrap">
+          <div class="article-details" role="group" aria-label="Article details">
+            <p>Semantics &amp; AI</p>
+            <time datetime="2026-08-30">August 30, 2026</time>
+            <p>7 minute read</p>
+          </div>
+
+          <div class="article-heading">
+            <p class="essay-number" aria-hidden="true">02</p>
+            <h2 id="article-title-02">AI needs interfaces that <span>mean what they say</span></h2>
+            <p>Accessibility taught us to build meaning into the interface. This same meaning can help AI understand what people are trying to do.</p>
+          </div>
+        </header>
+
+        <div class="article-layout wrap">
+          <aside class="reading-rail" aria-label="In this article">
+            <p>In this article</p>
+            <ol>
+              <li><a href="#meaning">Looks are not meaning</a></li>
+              <li><a href="#semantic-language">A shared language</a></li>
+              <li><a href="#ai-intention">AI and intention</a></li>
+              <li><a href="#system-meaning">Meaning in systems</a></li>
+              <li><a href="#semantic-practice">What we can do</a></li>
+            </ol>
+          </aside>
+
+          <div class="article-flow">
+            <div class="article-lede">
+              <p>English is my second language. I learned that knowing a word is not always the same as understanding its meaning. Context, order, and intention matter.</p>
+              <p>I see the same thing in digital products. A rectangle with text can look like a button. But if the code does not say “button,” its meaning becomes a guess. For disabled people, this guess already creates barriers. For AI, it can create confusion too.</p>
+            </div>
+
+            <section class="essay-section" id="meaning" aria-labelledby="meaning-title">
+              <p class="section-number" aria-hidden="true">01</p>
+              <h3 id="meaning-title">Looks are not meaning</h3>
+              <p>Visual design communicates through shape, color, position, and movement. This works when a person can see the screen and understands the pattern. Semantics communicates something more basic: what each part actually is.</p>
+              <p>A button is an action. A link is a destination. A heading starts a topic. When we choose the correct element, browsers and assistive technologies receive this meaning without needing to guess.</p>
+
+              <figure class="code-comparison">
+                <figcaption>Two elements can look identical. Only one carries its purpose by default.</figcaption>
+                <div class="code-example code-example--guess">
+                  <p>Only looks like an action</p>
+                  <code>&lt;div class="button"&gt;Continue&lt;/div&gt;</code>
+                </div>
+                <div class="code-example code-example--meaning">
+                  <p>Communicates an action</p>
+                  <code>&lt;button type="button"&gt;Continue&lt;/button&gt;</code>
+                </div>
+              </figure>
+
+              <div class="design-check">
+                <p>Before handoff</p>
+                <ul>
+                  <li>Choose the native element before designing a custom one.</li>
+                  <li>Name actions with clear verbs.</li>
+                  <li>Do not use a generic container only because it is easier to style.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="essay-section" id="semantic-language" aria-labelledby="semantic-language-title">
+              <p class="section-number" aria-hidden="true">02</p>
+              <h3 id="semantic-language-title">Accessibility gave us a shared language</h3>
+              <p>Semantic HTML is one of the strongest accessibility tools we already have. It gives a page a structure that can be understood without depending on its visual appearance.</p>
+
+              <dl class="meaning-map">
+                <div>
+                  <dt>Heading</dt>
+                  <dd>Starts a topic and creates hierarchy.</dd>
+                </div>
+                <div>
+                  <dt>Link</dt>
+                  <dd>Promises to take someone to a destination.</dd>
+                </div>
+                <div>
+                  <dt>Button</dt>
+                  <dd>Promises to perform an action.</dd>
+                </div>
+                <div>
+                  <dt>Label</dt>
+                  <dd>Explains the information a field needs.</dd>
+                </div>
+                <div>
+                  <dt>List</dt>
+                  <dd>Shows that a group of items belongs together.</dd>
+                </div>
+              </dl>
+
+              <p>This language supports screen readers, keyboard navigation, voice control, browser tools, and many other ways of using the web. It is not an extra layer. It is the contract of the interface.</p>
+
+              <blockquote class="semantic-quote">
+                <p>Semantic HTML is not an accessibility add-on. It is the original interface contract.</p>
+              </blockquote>
+            </section>
+
+            <section class="essay-section" id="ai-intention" aria-labelledby="ai-intention-title">
+              <p class="section-number" aria-hidden="true">03</p>
+              <h3 id="ai-intention-title">AI cannot read our intention</h3>
+              <p>AI systems are becoming better at looking at screens. But pixels are still an interpretation. A semantic structure can say what something is, what it is called, what state it has, and how it relates to the rest of the page.</p>
+              <p>An AI agent trying to complete a task should not need to guess if a blue rectangle means Continue, Buy, or Cancel. Clear structure reduces ambiguity for the machine in the same way it reduces barriers for a person.</p>
+
+              <ol class="meaning-sequence" aria-label="A semantic path through a form">
+                <li><strong>Navigation</strong><span>Where am I?</span></li>
+                <li><strong>Heading</strong><span>What is this task?</span></li>
+                <li><strong>Label</strong><span>What information is needed?</span></li>
+                <li><strong>State</strong><span>What is selected or invalid?</span></li>
+                <li><strong>Button</strong><span>What happens next?</span></li>
+              </ol>
+
+              <p>I do not think we should make the web accessible for AI instead of people. We should make it accessible for people, and recognize that honest structure also creates a better foundation for AI.</p>
+            </section>
+
+            <section class="essay-section" id="system-meaning" aria-labelledby="system-meaning-title">
+              <p class="section-number" aria-hidden="true">04</p>
+              <h3 id="system-meaning-title">Design systems must store meaning</h3>
+              <p>A design system is not only a library of colors, spacing, and components. It should also keep the semantic promise of every component. When a team uses a Button, the output should remain a real button.</p>
+
+              <table class="contract-table">
+                <caption>A component needs both a visual style and a semantic contract.</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Component</th>
+                    <th scope="col">Semantic contract</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Primary action</th>
+                    <td>A button with a clear verb and visible focus.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Text link</th>
+                    <td>An anchor with a meaningful destination.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dialog</th>
+                    <td>A named modal with managed focus and a close action.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Input</th>
+                    <td>A persistent label with connected help and error text.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>This is where designers have a lot of responsibility. If the semantic decision is documented in the component, every product team starts from a better place.</p>
+            </section>
+
+            <section class="essay-section" id="semantic-practice" aria-labelledby="semantic-practice-title">
+              <p class="section-number" aria-hidden="true">05</p>
+              <h3 id="semantic-practice-title">What we can do now</h3>
+              <p>The AI future can feel abstract, but the work is practical. We can make interfaces more understandable today with decisions we already know how to make.</p>
+
+              <div class="design-check">
+                <p>Build meaning into the product</p>
+                <ul>
+                  <li>Use native HTML before creating a custom interaction.</li>
+                  <li>Keep headings in a logical order.</li>
+                  <li>Give every control a clear name, role, value, and state.</li>
+                  <li>Connect labels, instructions, and errors to their fields.</li>
+                  <li>Include semantics in design-system documentation and testing.</li>
+                </ul>
+              </div>
+
+              <p>I believe semantics is a form of care. It helps a person navigate today. It can also give future systems a cleaner and safer language tomorrow.</p>
+            </section>
+
+            <footer class="article-conclusion">
+              <p>Meaning should not be hidden in pixels.</p>
+              <h3>Build the role. Write the name. Expose the state. Connect the relationships.</h3>
+              <p>That is better accessibility today—and a more understandable AI future.</p>
+            </footer>
+
+            <div class="byline">
+              <p>Written by <strong>Lucas Otsuka</strong>, a Senior UX Designer specializing in accessibility, inclusive design, and design systems.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>© 2026 Lucas Otsuka</p>
+      <p>Designed and coded with access in mind.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
